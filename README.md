@@ -96,9 +96,9 @@ It helps speed up the build due to the fact that only one page is collected.
 
 #### `$ gulp build`
 Final build before commit.
-1. Collects CSS files from folders `_pages/имя-страницы` and puts in a folder `stylesheets`.
+1. Collects CSS files from folders `_pages/name of page` and puts in a folder `stylesheets`.
 2. Minimizes the resulting CSS files and puts it next to the originals.
-3. Collects HTML files from folders `_pages/имя-страницы` and puts in the root of the project.
+3. Collects HTML files from folders `_pages/name of page` and puts in the root of the project.
 4. Aligns indents in received HTML files.
 
 😊

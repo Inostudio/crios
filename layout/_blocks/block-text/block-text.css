@@ -1,0 +1,22 @@
+.block-text {
+    &__title {
+        margin-bottom: 32px;
+
+        @media(--L) {
+            margin-bottom: 25px;
+        }
+
+        @media (--S) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__description {
+        line-height: calc(36/16);
+        max-width: 506px;
+
+        @media (--M) {
+            max-width: 100%;
+        }
+    }
+}

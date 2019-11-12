@@ -1,0 +1,121 @@
+@import "../title/title.css";
+
+.hero {
+
+    text-align: center;
+
+    &--top {
+        background: url("../images/hero/hero-top.jpg") no-repeat;
+        background-position: center 64px;
+        min-height: 1158px;
+
+        @media (--L) {
+            min-height: 1000px;
+            background-position: center bottom;
+            background-size: contain;
+        }
+
+        @media (--M) {
+            min-height: 800px;
+        }
+
+        @media (--S) {
+            min-height: 650px;
+        }
+
+        @media (--XS) {
+            min-height: 435px;
+        }
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url("../images/hero/hero-top@2x.jpg");
+            background-size: 2000px auto;
+
+            @media (--L) {
+                background-size: contain;
+            }
+        }
+    }
+
+    &--bottom {
+        background: url("../images/hero/hero-bottom.jpg") no-repeat;
+        min-height: 1528px;
+        text-align: center;
+        padding-top: 136px;
+        padding-bottom: 50px;
+        background-position: center 290px;
+
+        @media (--L) {
+            padding-top: 100px;
+            min-height: 1000px;
+            background-position: center bottom;
+            background-size: contain;
+        }
+
+        @media (--M) {
+            padding-top: 80px;
+            min-height: 800px;
+        }
+
+        @media (--S) {
+            min-height: 650px;
+        }
+
+        @media (--XS) {
+            padding-top: 50px;
+            min-height: 435px;
+        }
+
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url("../images/hero/hero-bottom@2x.jpg");
+            background-size: 2000px auto;
+
+            @media (--L) {
+                background-size: contain;
+            }
+        }
+
+        .hero__text {
+            margin-bottom: 16px;
+        }
+
+        .hero__title {
+            margin-bottom: 87px;
+
+            @media (--M) {
+                margin-bottom: 50px;
+            }
+
+            @media (--XS) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        line-height: calc(18/18);
+        margin-bottom: 85px;
+
+        @media (--M) {
+            line-height: calc(21 / 14);
+        }
+
+        @media (--S) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .hero__link {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 2000px) {
+    .hero {
+        background-size: 100%;
+    }
+}

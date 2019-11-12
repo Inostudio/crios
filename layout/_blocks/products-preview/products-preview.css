@@ -1,0 +1,76 @@
+@import "../product-preview/product-preview.css";
+
+.products-preview {
+    position: relative;
+    padding-top: 159px;
+    padding-bottom: 165px;
+    overflow: hidden;
+
+    @media (--L) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &:before {
+        position: absolute;
+        display: block;
+        width: 674px;
+        height: 674px;
+        content: "";
+        background: url("../images/snowflake/snowflake-1.jpg");
+        background-size: contain;
+        top: -90px;
+        left: 3px;
+        z-index: -1;
+
+        @media (--L) {
+            top: -15px;
+            left: -15px;
+            width: 550px;
+            height: 550px;
+        }
+
+        @media (--M) {
+            top: -50px;
+            left: -50px;
+        }
+    }
+
+    &:after {
+        position: absolute;
+        display: block;
+        width: 788px;
+        height: 788px;
+        content: "";
+        background: url("../images/snowflake/snowflake-2.jpg");
+        background-size: contain;
+        bottom: -194px;
+        right: -156px;
+        z-index: -1;
+
+        @media (--L) {
+            right: -15px;
+            bottom: -15px;
+            width: 550px;
+            height: 550px;
+        }
+
+        @media (--M) {
+            
+            right: -50px;
+            bottom: -50px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 123px;
+
+        @media (--L) {
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

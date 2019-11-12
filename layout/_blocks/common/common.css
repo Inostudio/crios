@@ -1,0 +1,21 @@
+@import "../../_blocks/normalize/normalize.css";
+@import "../../_blocks/reset/reset.css";
+
+/*! Styles */
+
+@import "../../_blocks/page/page.css";
+@import "../../_blocks/box/box.css";
+@import "../../_blocks/follow-page/follow-page.css";
+@import "../../_blocks/header/header.css";
+@import "../../_blocks/button/button.css";
+@import "../../_blocks/button-menu/button-menu.css";
+@import "../../_blocks/title/title.css";
+@import "../../_blocks/text/text.css";
+@import "../../_blocks/hero/hero.css";
+@import "../../_blocks/image-box/image-box.css";
+@import "../../_blocks/offers/offers.css";
+@import "../../_blocks/product/product.css";
+@import "../../_blocks/photo-description/photo-description.css";
+@import "../../_blocks/products-preview/products-preview.css";
+@import "../../_blocks/ceo/ceo.css";
+@import "../../_blocks/container/container.css";

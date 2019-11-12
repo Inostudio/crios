@@ -1,0 +1,24 @@
+mixin photo-description(obj)
+    section(class="photo-description")
+        div(class="photo-description__content " + obj.container)
+            include ../../_blocks/product/product.pug
+            +product({
+                row: obj.row,
+                cols: obj.cols,
+                boxText: "photo-description__block-text",
+                boxImage: "photo-description__block-img",
+                img: "photo-1",
+                format: ".jpg",
+            })(class="photo-descirption__content")
+            +product({
+                row: obj.row,
+                cols: obj.cols,
+                boxText: "photo-description__block-text",
+                boxImage: "photo-description__block-img",
+                img: "photo-2",
+                format: ".jpg",
+            })(class="product--reverse photo-descirption__content photo-description__content--reverse")
+
+    !="\n"
+
+    // END .photo-descirption

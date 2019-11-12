@@ -1,0 +1,30 @@
+.title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--black);
+
+    @media (--L) {
+        font-size: 44px;
+    }
+
+    @media (--M) {
+        font-size: 38px;
+    }
+
+    @media (--S) {
+        font-size: 34px;
+    }
+
+    @media (--XS) {
+        font-size: 28px;
+    }
+    
+    &--blue {
+        color: var(--blue);
+    }
+    
+    &--red {
+        color: var(--red);
+    }
+}

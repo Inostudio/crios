@@ -1,0 +1,28 @@
+.text {
+    font-size: 16px;
+    color: rgba(75, 88, 99, 0.25);
+
+    @media (--M) {
+        font-size: 14px;
+    }
+
+    &--size-s {
+        font-size: 14px;
+    }
+
+    &--size-l {
+        font-size: 18px;
+    }
+
+    &--transform {
+        text-transform: uppercase;
+    }
+
+    &--lighter {
+        color: rgba(75, 88, 99, 0.15);
+    }
+
+    &--darker {
+        color: rgba(75, 88, 99, 0.35);
+    }
+}

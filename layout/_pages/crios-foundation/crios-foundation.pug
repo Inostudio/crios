@@ -1,0 +1,86 @@
+extends ../../_blocks/template/template.pug
+
+block data
+    -
+        var data = {
+            framework: "foundation",
+            script: "what-input",
+        }
+
+block content
+    include ../../_blocks/follow-page/follow-page.pug
+    +follow-page()
+    
+    include ../../_blocks/header/header.pug
+    +header({
+        container: "grid-container fluid",
+        row: "grid-x",
+        cols: ["large-3 medium-2 columns", "large-6 medium-8 columns", "large-3 medium-12 columns"]
+    })
+
+    main(class="main")
+        include ../../_blocks/hero/hero.pug
+        -
+            var heroContent = [
+                {
+                    container: "grid-container fluid",
+                    row: "grid-x",
+                    col: "columns small-12",
+                    heroTop: true,
+                    title: 'Simple PSD template with cool stuff',
+                    textAfter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    href: "#5",
+                    text: "Explore template"
+                }
+            ]
+
+        each item in heroContent
+            +hero(item)(class="hero--top")
+
+        include ../../_blocks/offers/offers.pug
+        +offers({
+            container: "grid-container fluid",
+            row: "grid-x",
+            col: "cell auto",
+            offerCol: "columns large-3 medium-6 small-12",
+        })
+
+        include ../../_blocks/photo-description/photo-description.pug
+        +photo-description({
+            container: "grid-container fluid",
+            row: "grid-x",
+            cols: ["large-6 medium-6 small-12", "large-6 medium-6 small-12"]
+        })
+
+        include ../../_blocks/products-preview/products-preview.pug
+        +product-preview({
+            container: "grid-container fluid",
+            row: "grid-x",
+            cols: ["large-5 medium-6 small-12", "large-7 medium-6 small-12"]
+        })
+
+        include ../../_blocks/ceo/ceo.pug
+        +ceo({
+            container: "grid-container fluid",
+            row: "grid-x align-middle",
+            cols: ["large-6 medium-6", "large-6 medium-6"]
+        })
+
+        footer(class="footer")
+            include ../../_blocks/hero/hero.pug
+            -
+                var heroContent = [
+                    {
+                        container: "container-fluid",
+                        row: "grid-x",
+                        col: "columns small-12",
+                        textBefore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                        heroBottom: true,
+                        title: 'Lorem ipsum dolor sit amet',
+                        href: "https://SYMU.CO/FREEBIES",
+                        text: "SYMU.CO/FREEBIES"
+                    }
+                ]
+
+            each item in heroContent
+                +hero(item)(class="hero--bottom")

@@ -1,0 +1,26 @@
+.follow-page {
+    margin: auto;
+    text-align: center;
+    z-index: 10;
+    background: var(--white);
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px;
+
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--blue);
+        text-decoration: underline;
+        display: inline-block;
+        margin-right: 20px;
+
+        @media (--XS) {
+            margin-right: 0;
+            display: block;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

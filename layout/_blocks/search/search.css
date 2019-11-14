@@ -26,6 +26,7 @@
         padding: 0;
         border: none;
         box-shadow: none;
+        box-sizing: border-box;
         transition-property: width, padding;
         transition-duration: .2s;
         transition-timing-function: linear;

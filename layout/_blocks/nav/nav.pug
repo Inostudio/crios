@@ -1,0 +1,21 @@
+mixin nav(obj)
+    nav(class="nav")
+        ul(class="nav__list")
+            li(class="nav__item")
+                !="\n"
+                button(class="button button-menu button--circle button-menu--opened")
+                    !="\n"
+                    span(class="button-menu__line")
+                    !="\n"
+
+            li(class="nav__item")
+                div(class="menu")
+                    ul(class="menu__list")
+                        each item in obj
+                            li
+                                !="\n"
+                                a(class="menu__link nav__link", href="#") !{item}
+                                !="\n"
+    !="\n"
+
+    // END .nav

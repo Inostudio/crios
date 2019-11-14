@@ -1,0 +1,18 @@
+.header-content {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        width: calc(100% / 4);
+    }
+
+    &__logo {
+        width: calc(100% / 2);
+    }
+
+    &__search {
+        width: calc(100% / 4);
+    }
+}

@@ -13,6 +13,10 @@ mixin header(obj)
                             include ../../_blocks/nav-bootstrap/nav-bootstrap.pug
                             +nav-bootstrap(["Home", "About"])
 
+                        if (data.framework == "without-framework")
+                            include ../../_blocks/nav/nav.pug
+                            +nav(["Home", "About"])
+
                     div(class=obj.cols[1])
                         include ../../_blocks/logo/logo.pug
                         +logo()

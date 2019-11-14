@@ -1,6 +1,7 @@
 # Crios
 Layout crios.
 Site layout is taken from https://SYMU.CO/FREEBIES.
+Layout of page is done repeatedly using bootstap and foundation.
 
 ## Requirements
 - node v6.7.0

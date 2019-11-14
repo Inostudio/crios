@@ -43,6 +43,7 @@
         text-align: center;
         padding-top: 136px;
         padding-bottom: 50px;
+        box-sizing: border-box;
         background-position: center 290px;
 
         @media (--L) {

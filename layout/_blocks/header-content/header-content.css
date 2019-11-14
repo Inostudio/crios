@@ -1,8 +1,6 @@
 .header-content {
-    &__row {
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
 
     &__nav {
         width: calc(100% / 4);
@@ -13,6 +11,7 @@
     }
 
     &__search {
+        margin-top: 57px;
         width: calc(100% / 4);
     }
 }

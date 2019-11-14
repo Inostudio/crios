@@ -1,0 +1,9 @@
+.offers-content {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        width: calc(100% / 4);
+    }
+}

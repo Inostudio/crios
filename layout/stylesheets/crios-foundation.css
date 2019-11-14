@@ -301,6 +301,7 @@ ol {
                     }.nav__link {
         font-size: 15px;
         font-weight: 400;
+        line-height: calc(23 / 15);
         color: #43a9ff;
         color: var(--blue);
     }.button-menu {
@@ -530,6 +531,8 @@ ol {
         text-align: center;
         padding-top: 136px;
         padding-bottom: 50px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         background-position: center 290px
     }.hero--bottom .hero__text {
             margin-bottom: 16px;

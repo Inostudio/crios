@@ -1,0 +1,12 @@
+.ceo-content {
+    display: flex;
+    align-items: center;
+
+    &__photo-block {
+        width: calc(100% / 2);
+    }
+
+    &__text-block {
+        width: calc(100% / 2);
+    }
+}

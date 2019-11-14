@@ -11,8 +11,50 @@ block content
     +follow-page()
 
     include ../../_blocks/header/header.pug
-    +header({
-        container: "header-content",
-        row: "header-content__row",
-        cols: ["header-content__nav", "header-content__logo", "header-content__search"]
-    })
+    +header()
+
+    main(class="main")
+        include ../../_blocks/hero/hero.pug
+        -
+            var heroContent = [
+                {
+                    heroTop: true,
+                    title: 'Simple PSD template with cool stuff',
+                    textAfter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    href: "#5",
+                    text: "Explore template"
+                }
+            ]
+
+        each item in heroContent
+            +hero(item)(class="hero--top")
+
+        include ../../_blocks/offers/offers.pug
+        +offers()
+
+        include ../../_blocks/photo-description/photo-description.pug
+        +photo-description()
+
+        include ../../_blocks/products-preview/products-preview.pug
+        +product-preview()
+
+        include ../../_blocks/ceo/ceo.pug
+        +ceo({
+            container: "ceo-content"
+        })
+
+    footer(class="footer")
+        include ../../_blocks/hero/hero.pug
+        -
+            var heroContent = [
+                {
+                    textBefore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    heroBottom: true,
+                    title: 'Lorem ipsum dolor sit amet',
+                    href: "https://SYMU.CO/FREEBIES",
+                    text: "SYMU.CO/FREEBIES"
+                }
+            ]
+
+        each item in heroContent
+            +hero(item)(class="hero--bottom")

@@ -54,6 +54,7 @@
     &__link {
         font-size: 15px;
         font-weight: 400;
+        line-height: calc(23 / 15);
         color: var(--blue);
     }
 }

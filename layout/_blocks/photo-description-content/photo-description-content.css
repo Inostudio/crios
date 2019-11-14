@@ -1,0 +1,12 @@
+.photo-description-content {
+    display: flex;
+
+    &__block-img {
+        width: calc(100% / 2);
+    }
+
+    &__block-text {
+        width: calc(100% / 2);
+        box-sizing: border-box;
+    }
+}

@@ -1,59 +1,113 @@
 mixin offers(obj)
     section(class="offers")
         div(class="box")
-            div(class=obj.container)
-                div(class=obj.row)
-                    div(class=obj.col)
-                        p(class="text text--size-l offers__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        h2(class="title offers__title") Lorem ipsum dolor sit amet
+            if (data.framework !== "without-framework")
+                div(class=obj.container)
+                    div(class=obj.row)
+                        div(class=obj.col)
+                            p(class="text text--size-l offers__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            h2(class="title offers__title") Lorem ipsum dolor sit amet
 
-                div(class="offers__list " + obj.row)
-                    -
-                        var offersList = [
-                            {
-                                img: "offer-1",
-                                title: "Lorem ipsum dolor sit amet",
-                                text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
-                            },
+                    div(class="offers__list " + obj.row)
+                        -
+                            var offersList = [
+                                {
+                                    img: "offer-1",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
 
-                            {
-                                img: "offer-2",
-                                title: "Lorem ipsum dolor sit amet",
-                                text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
-                            },
+                                {
+                                    img: "offer-2",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
 
-                            {
-                                img: "offer-3",
-                                title: "Lorem ipsum dolor sit amet",
-                                text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
-                            },
+                                {
+                                    img: "offer-3",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
 
-                            {
-                                img: "offer-4",
-                                title: "Lorem ipsum dolor sit amet",
-                                text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
-                            },
-                        ]
+                                {
+                                    img: "offer-4",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+                            ]
 
-                    each item in offersList
-                        div(class="offer " + obj.offerCol)
-                            div(class="offer__icon-block")
-                                !="\n"
-                                img(class="offer__icon" src="images/offers/" + item.img + ".jpg" alt="Offer")
-                                !="\n"
-                            p(class="offer__title") !{item.title}
-                            p(class="text text--size-s text--darker offer__text") !{item.text}
+                        each item in offersList
+                            div(class="offer " + obj.offerCol)
+                                div(class="offer__icon-block")
+                                    !="\n"
+                                    img(class="offer__icon" src="images/offers/" + item.img + ".jpg" alt="Offer")
+                                    !="\n"
+                                p(class="offer__title") !{item.title}
+                                p(class="text text--size-s text--darker offer__text") !{item.text}
 
 
-                div(class="offers__block-button " + obj.row)
-                    !="\n"
-                    include ../../_blocks/button/button.pug
-                    +button({
-                        tag: "a",
-                        href: "#5",
-                        text: "Check our offer",
-                        mod: ["square", "square-middle"]
-                    })(class="button--square offers__link")
+                    div(class="offers__block-button " + obj.row)
+                        !="\n"
+                        include ../../_blocks/button/button.pug
+                        +button({
+                            tag: "a",
+                            href: "#5",
+                            text: "Check our offer",
+                            mod: ["square", "square-middle"]
+                        })(class="button--square offers__link")
+
+            else
+                div(class="offers-content")
+                    p(class="text text--size-l offers__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    h2(class="title offers__title") Lorem ipsum dolor sit amet
+
+                    div(class="offers__list offers-content__list")
+                        -
+                            var offersList = [
+                                {
+                                    img: "offer-1",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+
+                                {
+                                    img: "offer-2",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+
+                                {
+                                    img: "offer-3",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+
+                                {
+                                    img: "offer-4",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+                            ]
+
+                        each item in offersList
+                            div(class="offer offers-content__item")
+                                div(class="offer__icon-block")
+                                    !="\n"
+                                    img(class="offer__icon" src="images/offers/" + item.img + ".jpg" alt="Offer")
+                                    !="\n"
+                                p(class="offer__title") !{item.title}
+                                p(class="text text--size-s text--darker offer__text") !{item.text}
+
+
+                    div(class="offers__block-button")
+                        !="\n"
+                        include ../../_blocks/button/button.pug
+                        +button({
+                            tag: "a",
+                            href: "#5",
+                            text: "Check our offer",
+                            mod: ["square", "square-middle"]
+                        })(class="button--square offers__link")
 
     !="\n"
 

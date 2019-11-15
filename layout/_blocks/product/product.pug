@@ -2,12 +2,13 @@ mixin product(obj)
     div(class=obj.row + " product")&attributes(attributes)
         if (data.framework !== "without-framework")
             div(class=obj.cols[0] + " image-box " + obj.boxImage)
-                !="\n"
-                img(class="image-box__image product__img",
-                    src="images/product/" + obj.img + obj.format,
-                    srcset="images/product/" + obj.img + "@2x" + obj.format,
-                    alt=obj.img)
-                !="\n"
+                if (obj.img)
+                    !="\n"
+                    img(class="image-box__image product__img",
+                        src="images/product/" + obj.img + obj.format,
+                        srcset="images/product/" + obj.img + "@2x" + obj.format,
+                        alt=obj.img)
+                    !="\n"
                     
             div(class=obj.cols[1] + " " + obj.boxText)
                 include ../../_blocks/block-text/block-text.pug
@@ -19,12 +20,13 @@ mixin product(obj)
 
         else
             div(class="image-box " + obj.boxImage)
-                !="\n"
-                img(class="image-box__image product__img",
-                    src="images/product/" + obj.img + obj.format,
-                    srcset="images/product/" + obj.img + "@2x" + obj.format,
-                    alt=obj.img)
-                !="\n"
+                if (obj.img)
+                    !="\n"
+                    img(class="image-box__image product__img",
+                        src="images/product/" + obj.img + obj.format,
+                        srcset="images/product/" + obj.img + "@2x" + obj.format,
+                        alt=obj.img)
+                    !="\n"
                     
             div(class=obj.boxText)
                 include ../../_blocks/block-text/block-text.pug

@@ -1,6 +1,5 @@
 .header-content {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 
     &__nav {
@@ -8,6 +7,10 @@
 
         @media (--M) {
             width: calc(100%*2 / 12);
+        }
+
+        @media (--S) {
+            width: auto;
         }
     }
 

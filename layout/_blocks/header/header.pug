@@ -33,8 +33,9 @@ mixin header(obj)
 
             else
                 div(class="header-content")
-                    include ../../_blocks/nav/nav.pug
-                    +nav(["Home", "About"])(class="header-content__nav")
+                    div(class="header-content__nav")
+                        include ../../_blocks/nav/nav.pug
+                        +nav(["Home", "About"])
                             
                     include ../../_blocks/logo/logo.pug
                     +logo()(class="header-content__logo")

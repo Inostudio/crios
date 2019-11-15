@@ -11,8 +11,10 @@ html(lang="en")
     body(class="page")
         block content
 
-        script(src="scripts/jquery.js")
-        script(src="scripts/" + data.framework + "/" + data.script + ".js")
-        script(src="scripts/" + data.framework + "/" + data.framework + ".min.js")
+        if (data.framework !== "without-framework")
+
+            script(src="scripts/jquery.js")
+            script(src="scripts/" + data.framework + "/" + data.script + ".js")
+            script(src="scripts/" + data.framework + "/" + data.framework + ".min.js")
         
         script(src="scripts/common-" + data.framework + ".js")

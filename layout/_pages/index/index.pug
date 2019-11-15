@@ -3,8 +3,7 @@ extends ../../_blocks/template/template.pug
 block data
     -
         var data = {
-            framework: "bootstrap",
-            script: "popper.min",
+            framework: "without-framework",
         }
 
 block content
@@ -12,25 +11,18 @@ block content
     +follow-page()
 
     include ../../_blocks/header/header.pug
-    +header({
-        container: "container",
-        row: "row",
-        cols: ["col-xl-3 col-lg-3 col-md-2", "col-xl-6 col-lg-6 col-md-8", "col-xl-3 col-lg-3 col-md-2"]
-    })
+    +header()
 
     main(class="main")
         include ../../_blocks/hero/hero.pug
         -
             var heroContent = [
                 {
-                    container: "container-fluid",
-                    row: "row",
-                    col: "col-xl-12 col-lg-12 col-md-12 col-sm-12",
                     heroTop: true,
                     title: 'Simple PSD template with cool stuff',
                     textAfter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                     href: "#5",
-                    text: "Explore template",
+                    text: "Explore template"
                 }
             ]
 
@@ -38,32 +30,17 @@ block content
             +hero(item)(class="hero--top")
 
         include ../../_blocks/offers/offers.pug
-        +offers({
-            container: "container",
-            row: "row",
-            col: "col-xl-12 col-lg-12 col-md-12 col-sm-12",
-            offerCol: "col-xl-3 col-lg-3 col-md-6 col-sm-6"
-        })
+        +offers()
 
         include ../../_blocks/photo-description/photo-description.pug
-        +photo-description({
-            container: "container-fluid",
-            row: "row",
-            cols: ["col-xl-6 col-lg-6 col-md-6 col-sm-12", "col-xl-6 col-lg-6 col-md-6 col-sm-12"]
-        })
+        +photo-description()
 
         include ../../_blocks/products-preview/products-preview.pug
-        +product-preview({
-            container: "container",
-            row: "row",
-            cols: ["col-xl-5 col-lg-6 col-md-6 col-sm-12", "col-xl-7 col-lg-6 col-md-6 col-sm-12",]
-        })
+        +product-preview()
 
         include ../../_blocks/ceo/ceo.pug
         +ceo({
-            container: "container",
-            row: "row align-items-center",
-            cols: ["col-xl-6 col-lg-6 col-md-12", "col-xl-6 col-lg-6 col-md-12"]
+            container: "ceo-content"
         })
 
     footer(class="footer")
@@ -71,15 +48,11 @@ block content
         -
             var heroContent = [
                 {
-                    container: "container-fluid",
-                    row: "row",
-                    col: "col-xl-12 col-lg-12 col-md-12 col-sm-12",
                     textBefore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                     heroBottom: true,
                     title: 'Lorem ipsum dolor sit amet',
                     href: "https://SYMU.CO/FREEBIES",
-                    text: "SYMU.CO/FREEBIES",
-                    target: "_blank"
+                    text: "SYMU.CO/FREEBIES"
                 }
             ]
 

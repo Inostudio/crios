@@ -9,6 +9,7 @@
     &__link {
         font-size: 16px;
         font-weight: 500;
+        line-height: calc(24 / 16);
         color: var(--blue);
         text-decoration: underline;
         display: inline-block;

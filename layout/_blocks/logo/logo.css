@@ -23,6 +23,7 @@
         background-color: var(--white);
         margin-top: -207px;
         padding-top: 256px;
+        box-sizing: border-box;
         transition: color .2s linear;
 
         @media (--M) {

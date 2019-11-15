@@ -10,6 +10,7 @@
     border: none;
     outline: none;
     padding: 16px 36px;
+    box-sizing: border-box;
     display: inline-block;
     transition: border-radius 0.25s ease;
 

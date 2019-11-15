@@ -1,13 +1,30 @@
 .product-preview-content {
     display: flex;
+    flex-wrap: wrap;
 
     &__block-img {
         width: calc(500% / 12);
         box-sizing: border-box;
+
+        @media (--L) {
+            width: calc(100% / 2);
+        }
+
+        @media (--S) {
+            width: 100%;
+        }
     }
 
     &__block-text {
         width: calc(700% / 12);
         box-sizing: border-box;
+
+        @media (--L) {
+            width: calc(100% / 2);
+        }
+
+        @media (--S) {
+            width: 100%;
+        }
     }
 }

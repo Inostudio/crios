@@ -8,3 +8,8 @@
         max-width: 1500px;
     }
 }
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}

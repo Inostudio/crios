@@ -5,6 +5,7 @@
 
     &__photo-block {
         width: calc(100% / 2);
+        box-sizing: border-box;
 
         @media (--M) {
             width: 100%;
@@ -13,6 +14,7 @@
 
     &__text-block {
         width: calc(100% / 2);
+        box-sizing: border-box;
 
         @media (--M) {
             width: 100%;

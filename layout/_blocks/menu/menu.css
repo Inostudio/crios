@@ -2,7 +2,7 @@
     background: var(--white);
     box-shadow: 0 4px 4px rgba(218, 229, 239, 0.5);
     margin-left: 0;
-    width: 200px;
+    width: 0;
     position: relative;
     z-index: 1000;
     padding: 8px 0;
@@ -16,6 +16,7 @@
     &.is-active {
         opacity: 1;
         visibility: visible;
+        width: 200px;
     }
 
     &__list {

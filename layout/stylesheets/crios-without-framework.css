@@ -928,13 +928,15 @@ button[disabled] {
             padding: 0;
         }
 
-.photo-description__content--reverse .photo-description__block-text {
-            padding: 0 111px
+.photo-description__content--reverse .photo-description__block-img {
+            background: url("../../images/product/photo-2.jpg") center no-repeat;
+            background-size: cover;
         }
 
 .photo-description__block-img {
         padding: 0;
-        min-height: 500px
+        background: url("../../images/product/photo-1.jpg") center no-repeat;
+        background-size: cover
     }
 
 .photo-description__block-text {
@@ -1079,20 +1081,10 @@ button[disabled] {
         letter-spacing: 0.16px;
     }
 
-.container {
-    max-width: 1500px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0
-}
-
 .header-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
@@ -1116,7 +1108,7 @@ button[disabled] {
     -webkit-box-shadow: 0 4px 4px rgba(218, 229, 239, 0.5);
             box-shadow: 0 4px 4px rgba(218, 229, 239, 0.5);
     margin-left: 0;
-    width: 200px;
+    width: 0;
     position: relative;
     z-index: 1000;
     padding: 8px 0;
@@ -1137,6 +1129,7 @@ button[disabled] {
 .menu.is-active {
         opacity: 1;
         visibility: visible;
+        width: 200px;
     }
 
 .menu__list {
@@ -1210,11 +1203,15 @@ button[disabled] {
 }
 
 .ceo-content__photo-block {
-        width: calc(100% / 2)
+        width: calc(100% / 2);
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box
     }
 
 .ceo-content__text-block {
-        width: calc(100% / 2) 
+        width: calc(100% / 2);
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box 
     }
 
 @media (min-width: 1500px) {
@@ -1230,7 +1227,10 @@ button[disabled] {
             max-width: 1530px
 }
         .photo-description__content--reverse .photo-description__block-text {
-                padding: 0 235px
+                padding: 0;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center
         }
 
     .photo-description__block-img {
@@ -1240,16 +1240,16 @@ button[disabled] {
     .ceo__text-block {
             padding-top: 103px;
             padding-left: 73px
-    }
-
-.container {
-        max-width: 1500px
-}}
+    }}
 
 @media  (max-width: 1499px) {
 
 :root {
 }
+
+    .photo-description__block-img {
+            min-height: 440px
+    }
 
     .product-preview__block-img {
             padding: 0
@@ -1283,16 +1283,13 @@ button[disabled] {
             background-position: center bottom;
             background-size: contain
     }
+
     .block-text__title {
             margin-bottom: 25px
     }
         .photo-description__content--reverse .photo-description__block-text {
                 padding: 0 80px
         }
-
-    .photo-description__block-img {
-            min-height: 440px
-    }
 
     .photo-description__block-text {
             padding: 0 80px
@@ -1527,7 +1524,7 @@ button[disabled] {
             height: auto;
             width: auto;
             margin-top: 28px;
-            margin-left: 80px;
+            padding-left: 80px;
             padding-top: 0;
             font-size: 32px;
             background: none;
@@ -1602,14 +1599,12 @@ button[disabled] {
     .offers__block-button {
             margin-bottom: 50px
     }
+
     .block-text__title {
             margin-bottom: 20px
     }
         .photo-description__content--reverse .photo-description__block-text {
-                padding-top: 30px;
-                padding-bottom: 30px;
-                padding-left: 30px;
-                padding-right: 30px
+                padding: 30px
         }
 
     .photo-description__block-img {
@@ -1618,10 +1613,7 @@ button[disabled] {
     }
 
     .photo-description__block-text {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            padding-right: 30px
+            padding: 30px
     }
 
 .photo-description .block-text__description {
@@ -1640,6 +1632,10 @@ button[disabled] {
     .ceo__photo-block {
             padding-left: 15px;
             padding-right: 15px
+    }
+
+    .header-content__nav {
+            width: auto
     }
 
     .header-content__search {
@@ -1695,11 +1691,6 @@ button[disabled] {
         .hero--bottom .hero__title {
                 margin-bottom: 30px
         }
-
-    .photo-description__block-text {
-            padding-top: 30px;
-            padding-bottom: 30px
-    }
 
     .product-preview__block-img {
             padding: 0

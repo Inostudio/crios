@@ -8,13 +8,13 @@ mixin photo-description(obj)
                     cols: obj.cols,
                     boxText: "photo-description__block-text",
                     boxImage: "photo-description__block-img",
-                })(class="photo-descirption__content")
+                })
                 +product({
                     row: obj.row,
                     cols: obj.cols,
                     boxText: "photo-description__block-text",
                     boxImage: "photo-description__block-img",
-                })(class="product--reverse photo-descirption__content photo-description__content--reverse")
+                })(class="product--reverse photo-description__row")
 
         else
             include ../../_blocks/product/product.pug
@@ -22,12 +22,12 @@ mixin photo-description(obj)
                 row: "photo-description-content",
                 boxText: "photo-description-content__block-text photo-description__block-text",
                 boxImage: "photo-description-content__block-img photo-description__block-img",
-            })(class="photo-descirption__content")
+            })
             +product({
                 row: "photo-description-content",
                 boxText: "photo-description-content__block-text photo-description__block-text",
                 boxImage: "photo-description-content__block-img photo-description__block-img",
-            })(class="product--reverse photo-descirption__content photo-description__content--reverse")
+            })(class="product--reverse photo-descirption__row")
 
     !="\n"
 

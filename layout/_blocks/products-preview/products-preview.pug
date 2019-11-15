@@ -26,17 +26,17 @@ mixin product-preview(obj)
             else
                 include ../../_blocks/product/product.pug
                 +product({
-                    row: "product-preview-content",
-                    boxText: "product-preview-content__block-text product-preview__block-text",
-                    boxImage: "product-preview-content__block-img product-preview__block-img",
+                    row: "product-preview__row",
+                    boxText: "product-preview__block-text",
+                    boxImage: "product-preview__block-img",
                     color: "blue",
                     img: "product-1",
                     format: ".png",
                 })(class="product-preview products-preview__item")
                 +product({
-                    row: "product-preview-content",
-                    boxText: "product-preview-content__block-text product-preview__block-text",
-                    boxImage: "product-preview-content__block-img product-preview__block-img",
+                    row: "product-preview__row",
+                    boxText: "product-preview__block-text",
+                    boxImage: "product-preview__block-img",
                     color: "blue",
                     img: "product-2",
                     format: ".png",

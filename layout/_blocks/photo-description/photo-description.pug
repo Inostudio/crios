@@ -19,15 +19,15 @@ mixin photo-description(obj)
         else
             include ../../_blocks/product/product.pug
             +product({
-                row: "photo-description-content",
-                boxText: "photo-description-content__block-text photo-description__block-text",
-                boxImage: "photo-description-content__block-img photo-description__block-img",
-            })(class="photo-descirption__content")
+                row: "photo-description__row",
+                boxText: "photo-description__block-text",
+                boxImage: "photo-description__block-img",
+            })
             +product({
-                row: "photo-description-content",
-                boxText: "photo-description-content__block-text photo-description__block-text",
-                boxImage: "photo-description-content__block-img photo-description__block-img",
-            })(class="product--reverse photo-descirption__content photo-description__content--reverse")
+                row: "photo-description__row",
+                boxText: "photo-description__block-text",
+                boxImage: "photo-description__block-img",
+            })(class="product--reverse")
 
     !="\n"
 

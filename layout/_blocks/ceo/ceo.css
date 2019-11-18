@@ -39,7 +39,7 @@
         }
 
         @media (--L) {
-            padding: 15px;
+            padding: 15px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;

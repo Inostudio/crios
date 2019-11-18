@@ -19,18 +19,6 @@
                 padding: 0;
                 justify-content: center;
             }
-
-            @media (--L) {
-                padding: 0 80px;
-            }
-
-            @media (--M) {
-                padding: 0 60px;
-            }
-
-            @media (--S) {
-                padding: 30px;
-            }
         }
 
         .photo-description__block-img {
@@ -78,6 +66,10 @@
 
         @media (--S) {
             padding: 30px;
+        }
+
+        @media (--XS) {
+            padding: 15px;
         }
     }
 

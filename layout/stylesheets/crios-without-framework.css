@@ -860,7 +860,7 @@ button[disabled] {
 .offer__text {
         line-height: calc(24/14);
         letter-spacing: 0.14px;
-        max-width: 239px;
+        max-width: 254px;
         margin: 0 auto;
         padding-left: 10px;
         padding-right: 10px;
@@ -881,11 +881,11 @@ button[disabled] {
     }
 
 .offers__list {
-        margin-bottom: 68px
+        margin-bottom: 88px
     }
 
 .offers__block-button {
-        margin-bottom: 125px
+        margin-bottom: 126px
     }
 
 .offers__link {
@@ -952,7 +952,8 @@ button[disabled] {
     }
 
 .product-preview {
-    padding-left: 133px
+    padding-left: 148px;
+    padding-right: 15px
 }
 
 .product-preview:last-child {
@@ -983,10 +984,6 @@ button[disabled] {
             padding-bottom: 11px;
             padding-left: 65px
         }
-
-.product-preview .block-text__description {
-        padding-left: 4px;
-    }
 
 .product-preview__img {
         width: auto;
@@ -1177,6 +1174,8 @@ button[disabled] {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-left: 133px;
+    padding-right: 0;
 }
 
 .product-preview-content__block-img {
@@ -1287,9 +1286,6 @@ button[disabled] {
     .block-text__title {
             margin-bottom: 25px
     }
-        .photo-description__row .photo-description__block-text {
-                padding: 0 80px
-        }
 
     .photo-description__block-text {
             padding: 0 80px
@@ -1335,7 +1331,7 @@ button[disabled] {
     }
 
     .ceo__text-block {
-            padding: 15px;
+            padding: 15px 0;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -1445,9 +1441,6 @@ button[disabled] {
     .block-text__description {
             max-width: 100%
     }
-        .photo-description__row .photo-description__block-text {
-                padding: 0 60px
-        }
 
     .photo-description__block-img {
             min-height: 400px
@@ -1603,9 +1596,6 @@ button[disabled] {
     .block-text__title {
             margin-bottom: 20px
     }
-        .photo-description__row .photo-description__block-text {
-                padding: 30px
-        }
 
     .photo-description__block-img {
             min-height: 280px;
@@ -1636,6 +1626,10 @@ button[disabled] {
 
     .header-content__nav {
             width: auto
+    }
+
+    .header-content__logo {
+            width: 100%
     }
 
     .header-content__search {
@@ -1691,6 +1685,10 @@ button[disabled] {
         .hero--bottom .hero__title {
                 margin-bottom: 30px
         }
+
+    .photo-description__block-text {
+            padding: 15px
+    }
 
     .product-preview__block-img {
             padding: 0

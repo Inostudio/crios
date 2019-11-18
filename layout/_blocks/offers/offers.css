@@ -27,7 +27,7 @@
     }
 
     &__list {
-        margin-bottom: 68px;
+        margin-bottom: 88px;
 
         @media (--M) {
             margin-bottom: 60px;
@@ -39,7 +39,7 @@
     }
 
     &__block-button {
-        margin-bottom: 125px;
+        margin-bottom: 126px;
 
         @media (--M) {
             margin-bottom: 70px;

@@ -1,6 +1,8 @@
 .product-preview-content {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 133px;
+    padding-right: 0;
 
     &__block-img {
         width: calc(500% / 12);

@@ -10,8 +10,8 @@ block content
     include ../../_blocks/follow-page/follow-page.pug
     +follow-page()
 
-    include ../../_blocks/header/header.pug
-    +header()
+    include ../../_blocks/w-header/w-header.pug
+    +w-header()
 
     main(class="main")
         include ../../_blocks/hero/hero.pug
@@ -29,32 +29,34 @@ block content
         each item in heroContent
             +hero(item)(class="hero--top")
 
-        include ../../_blocks/offers/offers.pug
-        +offers()
+        include ../../_blocks/w-offers/w-offers.pug
+        +w-offers({
+            offersList: "offers__list"
+        })(class="offers")
 
-        include ../../_blocks/photo-description/photo-description.pug
-        +photo-description()
+        include ../../_blocks/w-photo-description/w-photo-description.pug
+        +w-photo-description()
 
-        include ../../_blocks/products-preview/products-preview.pug
-        +product-preview()
+        include ../../_blocks/w-products-preview/w-products-preview.pug
+        +w-products-preview()
 
-        include ../../_blocks/ceo/ceo.pug
-        +ceo({
-            container: "ceo-content"
-        })
+    //-     include ../../_blocks/ceo/ceo.pug
+    //-     +ceo({
+    //-         container: "ceo-content"
+    //-     })
 
-    footer(class="footer")
-        include ../../_blocks/hero/hero.pug
-        -
-            var heroContent = [
-                {
-                    textBefore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    heroBottom: true,
-                    title: 'Lorem ipsum dolor sit amet',
-                    href: "https://SYMU.CO/FREEBIES",
-                    text: "SYMU.CO/FREEBIES"
-                }
-            ]
+    //- footer(class="footer")
+    //-     include ../../_blocks/hero/hero.pug
+    //-     -
+    //-         var heroContent = [
+    //-             {
+    //-                 textBefore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //-                 heroBottom: true,
+    //-                 title: 'Lorem ipsum dolor sit amet',
+    //-                 href: "https://SYMU.CO/FREEBIES",
+    //-                 text: "SYMU.CO/FREEBIES"
+    //-             }
+    //-         ]
 
-        each item in heroContent
-            +hero(item)(class="hero--bottom")
+    //-     each item in heroContent
+    //-         +hero(item)(class="hero--bottom")

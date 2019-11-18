@@ -1,41 +1,19 @@
 mixin photo-description(obj)
     section(class="photo-description")
-        if (data.framework !== "without-framework")
-            div(class="photo-description__content " + obj.container)
-                include ../../_blocks/product/product.pug
-                +product({
-                    row: obj.row,
-                    cols: obj.cols,
-                    boxText: "photo-description__block-text",
-                    boxImage: "photo-description__block-img",
-                    img: "photo-1",
-                    format: ".jpg",
-                })(class="photo-descirption__content")
-                +product({
-                    row: obj.row,
-                    cols: obj.cols,
-                    boxText: "photo-description__block-text",
-                    boxImage: "photo-description__block-img",
-                    img: "photo-2",
-                    format: ".jpg",
-                })(class="product--reverse photo-descirption__content photo-description__content--reverse")
-
-        else
+        div(class="photo-description__row " + obj.container)
             include ../../_blocks/product/product.pug
             +product({
-                row: "photo-description-content",
-                boxText: "photo-description-content__block-text photo-description__block-text",
-                boxImage: "photo-description-content__block-img photo-description__block-img",
-                img: "photo-1",
-                format: ".jpg",
-            })(class="photo-descirption__content")
+                row: obj.row,
+                cols: obj.cols,
+                boxText: "photo-description__block-text",
+                boxImage: "photo-description__block-img",
+            })
             +product({
-                row: "photo-description-content",
-                boxText: "photo-description-content__block-text photo-description__block-text",
-                boxImage: "photo-description-content__block-img photo-description__block-img",
-                img: "photo-2",
-                format: ".jpg",
-            })(class="product--reverse photo-descirption__content photo-description__content--reverse")
+                row: obj.row,
+                cols: obj.cols,
+                boxText: "photo-description__block-text",
+                boxImage: "photo-description__block-img",
+            })(class="product--reverse photo-description__row--reverse")
 
     !="\n"
 

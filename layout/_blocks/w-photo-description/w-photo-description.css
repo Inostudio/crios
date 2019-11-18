@@ -1,6 +1,8 @@
-.photo-description-content {
-    display: flex;
-
+.w-photo-description {
+    &__row {
+        display: flex;
+    }
+    
     &__block-img {
         width: calc(100% / 2);
     }

@@ -1,0 +1,29 @@
+mixin w-hero(obj)
+    section(class="w-hero")&attributes(attributes)
+        div(class="w-hero__content")
+            if obj.textBefore
+                p(class="hero__text text text--size-l")= obj.textBefore
+
+            if obj.heroTop
+                h1(class="hero__title title")= obj.title
+
+            if obj.heroBottom
+                h3(class="hero__title title")= obj.title
+                !="\n"
+            
+            if obj.textAfter
+                p(class="hero__text text text--size-l")= obj.textAfter
+                !="\n"
+                
+            include ../../_blocks/button/button.pug
+            +button({
+                tag: "a",
+                href: obj.href,
+                text: obj.text,
+                mod: ["square"],
+                target: obj.target
+            })(class="hero__link")
+
+    !="\n"
+
+    // END .hero

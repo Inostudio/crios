@@ -604,16 +604,19 @@ ol {
     }.photo-description {
     background-color: #f7f8fb;
     background-color: var(--grey);
-}.photo-description .photo-description__content {
+}.photo-description .photo-description__row {
         padding: 0;
         overflow: hidden
-    }.photo-description .photo-description__content.fluid {
+    }.photo-description .photo-description__row.fluid {
             padding: 0;
-        }.photo-description__content--reverse .photo-description__block-text {
-            padding: 0 111px
+        }.photo-description__row--reverse .photo-description__block-img {
+            background: url("../../images/product/photo-2.jpg") center no-repeat;
+            background-size: cover;
         }.photo-description__block-img {
         padding: 0;
-        min-height: 500px
+        min-height: 500px;
+        background: url("../../images/product/photo-1.jpg") center no-repeat;
+        background-size: cover
     }.photo-description__block-text {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -722,8 +725,11 @@ ol {
             width: auto;
             max-width: 1530px
 }
-        .photo-description__content--reverse .photo-description__block-text {
-                padding: 0 235px
+        .photo-description__row--reverse .photo-description__block-text {
+                padding: 0;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center
         }
 
     .photo-description__block-img {
@@ -763,9 +769,6 @@ ol {
     .block-text__title {
             margin-bottom: 25px
     }
-        .photo-description__content--reverse .photo-description__block-text {
-                padding: 0 80px
-        }
 
     .photo-description__block-img {
             min-height: 440px
@@ -891,9 +894,6 @@ ol {
     .block-text__description {
             max-width: 100%
     }
-        .photo-description__content--reverse .photo-description__block-text {
-                padding: 0 60px
-        }
 
     .photo-description__block-img {
             min-height: 400px
@@ -1000,12 +1000,6 @@ ol {
     .block-text__title {
             margin-bottom: 20px
     }
-        .photo-description__content--reverse .photo-description__block-text {
-                padding-top: 30px;
-                padding-bottom: 30px;
-                padding-left: 30px;
-                padding-right: 30px
-        }
 
     .photo-description__block-img {
             min-height: 280px;
@@ -1013,10 +1007,7 @@ ol {
     }
 
     .photo-description__block-text {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            padding-right: 30px
+            padding: 30px
     }.photo-description .block-text__description {
             line-height: 1.8
     }.photo-description .block-text__title {
@@ -1059,8 +1050,7 @@ ol {
         }
 
     .photo-description__block-text {
-            padding-top: 30px;
-            padding-bottom: 30px
+            padding: 15px
     }
 
     .product-preview__block-img {

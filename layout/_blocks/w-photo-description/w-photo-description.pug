@@ -1,0 +1,17 @@
+mixin w-photo-description(obj)
+    section(class="w-photo-description")
+        include ../../_blocks/product/product.pug
+        +product({
+            row: "w-photo-description__row",
+            boxText: "w-photo-description__block-text photo-description__block-text",
+            boxImage: "w-photo-description__block-img photo-description__block-img",
+        })
+        +product({
+            row: "w-photo-description__row",
+            boxText: "w-photo-description__block-text photo-description__block-text",
+            boxImage: "w-photo-description__block-img photo-description__block-img",
+        })(class="product--reverse photo-description__row--reverse")
+
+    !="\n"
+
+    // END .w-photo-description

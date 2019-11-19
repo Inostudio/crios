@@ -17,6 +17,7 @@
     &.is-active {
         opacity: 1;
         visibility: visible;
+        width: 200px;
     }
 
     &__list {

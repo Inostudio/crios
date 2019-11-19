@@ -472,6 +472,8 @@ ol {
     border: none;
     outline: none;
     padding: 16px 36px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: inline-block;
     -webkit-transition: border-radius 0.25s ease;
     -o-transition: border-radius 0.25s ease;
@@ -567,7 +569,7 @@ ol {
     }.offer__text {
         line-height: calc(24/14);
         letter-spacing: 0.14px;
-        max-width: 239px;
+        max-width: 254px;
         margin: 0 auto;
         padding-left: 10px;
         padding-right: 10px;
@@ -580,9 +582,9 @@ ol {
     }.offers__title {
         margin-bottom: 98px
     }.offers__list {
-        margin-bottom: 68px
+        margin-bottom: 88px
     }.offers__block-button {
-        margin-bottom: 125px
+        margin-bottom: 126px
     }.offers__link {
         margin-left: auto;
         margin-right: auto;
@@ -625,7 +627,8 @@ ol {
         background-color: #f7f8fb;
         background-color: var(--grey)
     }.product-preview {
-    padding-left: 133px
+    padding-left: 148px;
+    padding-right: 15px
 }.product-preview:last-child {
         margin-bottom: 0;
     }.product-preview__block-text {
@@ -647,9 +650,7 @@ ol {
     }.product-preview--reverse .product-preview__block-text {
             padding-bottom: 11px;
             padding-left: 65px
-        }.product-preview .block-text__description {
-        padding-left: 4px;
-    }.product-preview__img {
+        }.product-preview__img {
         width: auto;
     }.products-preview {
     position: relative;
@@ -736,10 +737,12 @@ ol {
     .ceo__text-block {
             padding-top: 103px;
             padding-left: 73px
-    }.container {
-        max-width: 1500px
-}}@media  (max-width: 1499px) {:root {
+    }}@media  (max-width: 1499px) {:root {
 }
+
+    .photo-description__block-img {
+            min-height: 440px
+    }
 
     .product-preview__block-img {
             padding: 0
@@ -763,6 +766,7 @@ ol {
             background-position: center bottom;
             background-size: contain
     }
+
     .block-text__title {
             margin-bottom: 25px
     }
@@ -807,7 +811,7 @@ ol {
     }
 
     .ceo__text-block {
-            padding: 15px;
+            padding: 15px 0;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -934,7 +938,7 @@ ol {
             height: auto;
             width: auto;
             margin-top: 28px;
-            margin-left: 80px;
+            padding-left: 80px;
             padding-top: 0;
             font-size: 32px;
             background: none;
@@ -1004,6 +1008,7 @@ ol {
     .offers__block-button {
             margin-bottom: 50px
     }
+
     .block-text__title {
             margin-bottom: 20px
     }

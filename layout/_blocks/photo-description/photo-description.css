@@ -37,7 +37,7 @@
             min-height: 563px;
         }
 
-        @media (--L) {
+        @media (--XL) {
             min-height: 440px;
         }
 

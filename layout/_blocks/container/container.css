@@ -2,9 +2,14 @@
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
+    padding: 0;
 
     @media (--XXL) {
         max-width: 1500px;
     }
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }

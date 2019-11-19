@@ -1,5 +1,6 @@
 .product-preview {
-    padding-left: 133px;
+    padding-left: 148px;
+    padding-right: 15px;
 
     @media (--L) {
         padding: 0;
@@ -47,10 +48,6 @@
                 padding: 0;
             }
         }
-    }
-
-    .block-text__description {
-        padding-left: 4px;
     }
 
     &__img {

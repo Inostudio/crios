@@ -1,5 +1,3 @@
-console.log('Hello! I\'m Crios😊.')
-
 const buttonMenu = document.querySelector('.button-menu');
 
 buttonMenu.addEventListener('click', ()=> {

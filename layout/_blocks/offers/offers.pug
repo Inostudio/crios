@@ -36,7 +36,7 @@ mixin offers(obj)
                         ]
 
                     each item in offersList
-                        div(class="offer " + obj.offerCol)
+                        div(class="offer offers__item " + obj.offerCol)
                             div(class="offer__icon-block")
                                 !="\n"
                                 img(class="offer__icon" src="images/offers/" + item.img + ".jpg" alt="Offer")

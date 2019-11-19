@@ -273,6 +273,7 @@ ol {
         }.nav {
     margin-top: 57px
 }.nav__list {
+        position: relative;
         list-style: none;
     }.nav__item.menu {
             margin-left: 0;
@@ -528,7 +529,6 @@ ol {
     }.hero--bottom {
         background: url("../images/hero/hero-bottom.jpg") no-repeat;
         min-height: 1528px;
-        text-align: center;
         padding-top: 136px;
         padding-bottom: 50px;
         -webkit-box-sizing: border-box;
@@ -589,8 +589,6 @@ ol {
         -webkit-box-direction: reverse;
             -ms-flex-direction: row-reverse;
                 flex-direction: row-reverse;
-    }.product__img {
-        height: 100%;
     }.block-text__title {
         margin-bottom: 32px
     }.block-text__description {
@@ -601,6 +599,7 @@ ol {
     background-color: var(--grey);
 }.photo-description .photo-description__row {
         padding: 0;
+        margin: 0;
         overflow: hidden
     }.photo-description .photo-description__row.fluid {
             padding: 0;
@@ -709,7 +708,7 @@ ol {
     }.ceo__profession {
         letter-spacing: 0.16px;
     }.container {
-    max-width: 1500px;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     -webkit-box-sizing: border-box;
@@ -865,9 +864,7 @@ ol {
 
     .hero__text {
             line-height: calc(21 / 14)
-    }.offer {
-        margin-bottom: 40px
-}
+    }
 
     .offers__text {
             line-height: calc(27 / 18);
@@ -880,6 +877,10 @@ ol {
 
     .offers__list {
             margin-bottom: 60px
+    }
+
+    .offers__item {
+            margin-bottom: 40px
     }
 
     .offers__block-button {

@@ -1,19 +1,19 @@
 mixin w-products-preview(obj)
-    section(class="w-products-preview")
+    section(class="w-products-preview products-preview")
         div(class="box")
             include ../../_blocks/product/product.pug
             +product({
-                row: "w-products-preview__item",
-                boxText: "w-products-preview__block-text",
-                boxImage: "w-products-preview__block-img",
+                row: "product-preview w-products-preview__item products-preview__item",
+                boxText: "product-preview__block-text w-products-preview__block-text",
+                boxImage: "product-preview__block-img w-products-preview__block-img",
                 color: "blue",
                 img: "product-1",
                 format: ".png",
-            })(class="product-preview w-products-preview__item")
+            })
             +product({
-                row: "w-products-preview__item",
-                boxText: "w-products-preview__block-text",
-                boxImage: "w-products-preview__block-img",
+                row: "product-preview w-products-preview__item products-preview__item",
+                boxText: "product-preview__block-text w-products-preview__block-text",
+                boxImage: "product-preview__block-img w-products-preview__block-img",
                 color: "blue",
                 img: "product-2",
                 format: ".png",

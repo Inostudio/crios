@@ -38,6 +38,12 @@
         }
     }
 
+    &__item {
+        @media (--M) {
+            margin-bottom: 40px;
+        }
+    }
+
     &__block-button {
         margin-bottom: 125px;
 

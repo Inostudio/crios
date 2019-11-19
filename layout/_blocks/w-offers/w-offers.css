@@ -1,9 +1,18 @@
 .w-offers {
     &__list {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
         width: calc(100% / 4);
+
+        @media (--M) {
+            width: calc(100% / 2);
+        }
+
+        @media (--XS) {
+            width: 100%;
+        }
     }
 }

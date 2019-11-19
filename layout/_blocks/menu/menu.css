@@ -3,7 +3,7 @@
     box-shadow: 0 4px 4px rgba(218, 229, 239, 0.5);
     margin-left: 0;
     width: 200px;
-    position: absolute;
+    position: relative;
     left: 0;
     z-index: 1000;
     padding: 8px 0;

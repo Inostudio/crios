@@ -26,6 +26,13 @@
         box-sizing: border-box;
         transition: color .2s linear;
 
+        @media (--L) {
+            width: 380px;
+            height: 380px;
+            padding-top: 235px;
+            margin-top: -190px;
+        }
+
         @media (--M) {
             height: 300px;
             width: 300px;

@@ -7,6 +7,10 @@
     background: var(--white);
     margin-bottom: 122px;
 
+    @media (--L) {
+        margin-bottom: 110px;
+    }
+
     @media (--M) {
         margin-bottom: 80px;
     }

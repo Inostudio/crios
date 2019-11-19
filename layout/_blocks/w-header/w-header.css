@@ -13,7 +13,7 @@
             width: calc(100%*2 / 12);
         }
 
-        @media (--S) {
+        @media (--XS) {
             width: auto;
         }
     }
@@ -23,6 +23,10 @@
 
         @media (--M) {
             width: calc(100%*8 / 12);
+        }
+
+        @media (--S) {
+            width: calc(100%*10 / 12);
         }
     }
 

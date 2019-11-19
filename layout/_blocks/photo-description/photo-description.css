@@ -24,6 +24,11 @@
         .photo-description__block-img {
             background: url("../../images/product/photo-2.jpg") center no-repeat;
             background-size: cover;
+
+            @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+                background: url("../../images/product/photo-2@2x.jpg") center no-repeat;
+                background-size: cover;
+            }
         }
     }
 
@@ -32,6 +37,11 @@
         min-height: 500px;
         background: url("../../images/product/photo-1.jpg") center no-repeat;
         background-size: cover;
+
+        @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+            background: url("../../images/product/photo-1@2x.jpg") center no-repeat;
+            background-size: cover;
+        }
 
         @media (--XXL) {
             min-height: 563px;

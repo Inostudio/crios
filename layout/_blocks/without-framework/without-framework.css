@@ -1,6 +1,5 @@
-@import "../header-content/header-content.css";
-@import "../menu/menu.css";
-@import "../offers-content/offers-content.css";
-@import "../photo-description-content/photo-description-content.css";
-@import "../product-preview-content/product-preview-content.css";
-@import "../ceo-content/ceo-content.css";
+@import "../w-header/w-header.css";
+@import "../w-offers/w-offers.css";
+@import "../w-photo-description/w-photo-description.css";
+@import "../w-products-preview/w-products-preview.css";
+@import "../w-ceo/w-ceo.css";

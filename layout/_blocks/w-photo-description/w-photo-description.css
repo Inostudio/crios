@@ -1,7 +1,9 @@
-.photo-description-content {
-    display: flex;
-    flex-wrap: wrap;
-
+.w-photo-description {
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     &__block-img {
         width: calc(100% / 2);
 

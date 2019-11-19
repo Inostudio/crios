@@ -40,7 +40,6 @@
     &--bottom {
         background: url("../images/hero/hero-bottom.jpg") no-repeat;
         min-height: 1528px;
-        text-align: center;
         padding-top: 136px;
         padding-bottom: 50px;
         box-sizing: border-box;

@@ -1,9 +1,5 @@
 .offer {
 
-    @media (--M) {
-        margin-bottom: 40px;
-    }
-
     &__icon-block {
         margin-bottom: 36px;
     }

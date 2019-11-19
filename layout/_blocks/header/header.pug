@@ -1,48 +1,34 @@
 mixin header(obj)
     header(class="header")
         div(class="box")
-            if (data.framework !== "without-framework")
-                div(class=obj.container)
-                    div(class=obj.row)
-                        div(class=obj.cols[0])
-
-                            if (data.framework == "foundation")
-                                include ../../_blocks/nav-foundation/nav-foundation.pug
-                                +nav-foundation(["Home", "About"])
-
-                            if (data.framework == "bootstrap")
-                                include ../../_blocks/nav-bootstrap/nav-bootstrap.pug
-                                +nav-bootstrap(["Home", "About"])
-
-                            if (data.framework == "without-framework")
-                                include ../../_blocks/nav/nav.pug
-                                +nav(["Home", "About"])
-
-                        div(class=obj.cols[1])
-                            include ../../_blocks/logo/logo.pug
-                            +logo()
+            div(class=obj.container + " header__row")
+                div(class=obj.row)
+                    div(class=obj.cols[0])
 
                         if (data.framework == "foundation")
-                            div(class=obj.cols[2] + " header__search")
-                                include ../../_blocks/search-foundation/search-foundation.pug
-                                +search-foundation()
-                        else
-                            div(class=obj.cols[2] + " header__search")
-                                include ../../_blocks/search/search.pug
-                                +search()
+                            include ../../_blocks/nav-foundation/nav-foundation.pug
+                            +nav-foundation(["Home", "About"])
 
-            else
-                div(class="header-content")
-                    div(class="header-content__nav")
-                        include ../../_blocks/nav/nav.pug
-                        +nav(["Home", "About"])
-                            
-                    include ../../_blocks/logo/logo.pug
-                    +logo()(class="header-content__logo")
+                        if (data.framework == "bootstrap")
+                            include ../../_blocks/nav-bootstrap/nav-bootstrap.pug
+                            +nav-bootstrap(["Home", "About"])
 
-                    div(class="header-content__search")
-                        include ../../_blocks/search/search.pug
-                        +search()(class="header-content__search")
+                        if (data.framework == "without-framework")
+                            include ../../_blocks/nav/nav.pug
+                            +nav(["Home", "About"])
+
+                    div(class=obj.cols[1])
+                        include ../../_blocks/logo/logo.pug
+                        +logo()
+
+                    if (data.framework == "foundation")
+                        div(class=obj.cols[2] + " header__search")
+                            include ../../_blocks/search-foundation/search-foundation.pug
+                            +search-foundation()
+                    else
+                        div(class=obj.cols[2] + " header__search")
+                            include ../../_blocks/search/search.pug
+                            +search()
     !="\n"
 
     // END .header

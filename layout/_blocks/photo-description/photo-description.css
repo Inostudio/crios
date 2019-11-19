@@ -3,8 +3,9 @@
 .photo-description {
     background-color: var(--grey);
 
-    .photo-description__content {
+    .photo-description__row {
         padding: 0;
+        margin: 0;
         overflow: hidden;
 
         &.fluid {
@@ -12,9 +13,8 @@
         }
     }
 
-    &__row {
+    &__row--reverse {
         .photo-description__block-text {
-
             @media (--XXL) {
                 padding: 0;
                 justify-content: center;
@@ -29,6 +29,7 @@
 
     &__block-img {
         padding: 0;
+        min-height: 500px;
         background: url("../../images/product/photo-1.jpg") center no-repeat;
         background-size: cover;
 

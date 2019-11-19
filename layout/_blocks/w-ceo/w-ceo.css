@@ -1,7 +1,10 @@
-.ceo-content {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.w-ceo {
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
 
     &__photo-block {
         width: calc(100% / 2);
@@ -18,6 +21,6 @@
 
         @media (--M) {
             width: 100%;
-        } 
+        }
     }
 }

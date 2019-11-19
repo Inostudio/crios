@@ -1,6 +1,10 @@
-.header-content {
-    display: flex;
-    flex-wrap: wrap;
+@import "../menu/menu.css";
+
+.w-header {
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     &__nav {
         width: calc(100% / 4);
@@ -20,14 +24,9 @@
         @media (--M) {
             width: calc(100%*8 / 12);
         }
-
-        @media (--S) {
-            width: 100%;
-        }
     }
 
     &__search {
-        margin-top: 57px;
         width: calc(100% / 4);
 
         @media (--M) {
@@ -36,7 +35,6 @@
 
         @media (--S) {
             width: 100%;
-            margin-top: 9px;
         }
     }
 }

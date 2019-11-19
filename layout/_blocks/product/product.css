@@ -2,8 +2,4 @@
     &--reverse {
         flex-direction: row-reverse;
     }
-
-    &__img {
-        height: 100%;
-    }
 }

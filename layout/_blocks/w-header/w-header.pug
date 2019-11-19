@@ -1,0 +1,16 @@
+mixin w-header(obj)
+    header(class="w-header header")
+        div(class="box")
+            div(class="w-header__content header__row")
+                include ../../_blocks/nav/nav.pug
+                +nav(["Home", "About"])(class="w-header__nav")
+                        
+                include ../../_blocks/logo/logo.pug
+                +logo()(class="w-header__logo")
+
+                div(class="w-header__search header__search")
+                    include ../../_blocks/search/search.pug
+                    +search()
+    !="\n"
+
+    // END .w-header

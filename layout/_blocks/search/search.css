@@ -8,7 +8,13 @@
     transition-duration: .2s;
     transition-timing-function: ease-in;
 
+    @media (--M) {
+        position: absolute;
+        right: 0;
+    }
+
     @media (--S) {
+        position: relative;
         width: 100%;
         justify-content: space-between;
         box-shadow: 0 0 65px #dae5ef;
@@ -46,6 +52,14 @@
         width: 100%;
         justify-content: space-between;
         box-shadow: 0 0 65px #dae5ef;
+
+        @media (--M) {
+            width: 200px;
+        }
+
+        @media (--S) {
+            width: 100%;
+        }
 
         & .form__controll {
             width: 100%;

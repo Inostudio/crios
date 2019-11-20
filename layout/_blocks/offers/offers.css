@@ -27,7 +27,7 @@
     }
 
     &__list {
-        margin-bottom: 88px;
+        margin-bottom: 91px;
 
         @media (--M) {
             margin-bottom: 60px;

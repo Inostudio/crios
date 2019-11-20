@@ -1,20 +1,24 @@
 mixin photo-description(obj)
     section(class="photo-description")
-        div(class="photo-description__row " + obj.container)
-            include ../../_blocks/product/product.pug
-            +product({
-                row: obj.row,
-                cols: obj.cols,
-                boxText: "photo-description__block-text",
-                boxImage: "photo-description__block-img",
-            })
-            +product({
-                row: obj.row,
-                cols: obj.cols,
-                boxText: "photo-description__block-text",
-                boxImage: "photo-description__block-img",
-            })(class="product--reverse photo-description__row--reverse")
-
+        div(class="container")
+            div(class="row")
+                div(class="col-xl-6 col-sm-12 photo-description__image-box")
+                div(class="col-xl-6 col-sm-12 photo-description__text-box")
+                    include ../../_blocks/block-text/block-text.pug
+                    +block-text({
+                        titleColor: "blue",
+                        title: "Lorem ipsum dolor",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+                    })
+            div(class="row")
+                div(class="col-xl-6 photo-description__text-box")
+                    include ../../_blocks/block-text/block-text.pug
+                    +block-text({
+                        titleColor: "blue",
+                        title: "Lorem ipsum dolor",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+                    })
+                div(class="col-xl-6 photo-description__image-box")
     !="\n"
 
     // END .photo-description

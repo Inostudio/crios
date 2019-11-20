@@ -1,2 +1,6 @@
-@import "../../_blocks/common/common.css";
-@import "../../_blocks/without-framework/without-framework.css";
+@import "../../_blocks/page/page.css";
+@import "../../_blocks/follow-page/follow-page.css";
+@import "../../_blocks/_without-framework/header/header.css";
+@import "../../_blocks/hero/hero.css";
+@import "../../_blocks/_without-framework/offers/offers.css";
+@import "../../_blocks/_without-framework/ceo/ceo.css";

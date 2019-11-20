@@ -1,0 +1,25 @@
+mixin ceo(obj)
+    section(class="ceo")&attributes(attributes)
+        div(class="box ceo__row")
+            div(class="image-box ceo__photo-block")
+                !="\n"
+                img(class="image-box__image ceo__photo",
+                src="images/photo/ceo.jpg",
+                srcset="images/photo/ceo@2x.jpg 2x" alt="Ceo")
+                !="\n"
+
+            div(class="ceo__text-block")
+                include ../../block-text/block-text.pug
+                +block-text({
+                    titleColor: "red",
+                    title: "Template is awesome",
+                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+                })(class="ceo__box-text")
+
+                div(class="ceo__description")
+                    p(class="ceo__name") John Doe
+                    p(class="text ceo__profession") CEO at Crios.com
+
+    !="\n"
+
+    // END .w-ceo

@@ -10,11 +10,12 @@
 
     @media (--M) {
         position: absolute;
-        right: 0;
+        right: 15px;
     }
 
     @media (--S) {
         position: relative;
+        right: 0;
         width: 100%;
         justify-content: space-between;
         box-shadow: 0 0 65px #dae5ef;

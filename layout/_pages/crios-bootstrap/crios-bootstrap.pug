@@ -11,21 +11,14 @@ block content
     include ../../_blocks/follow-page/follow-page.pug
     +follow-page()
 
-    include ../../_blocks/header/header.pug
-    +header({
-        container: "container",
-        row: "row",
-        cols: ["col-xl-3 col-lg-3 col-md-2 col-sm-2", "col-xl-6 col-lg-6 col-md-8 col-sm-8", "col-xl-3 col-lg-3 col-md-2 col-sm-12"]
-    })
+    include ../../_blocks/_bootstrap/header/header.pug
+    +header()
 
     main(class="main")
-        include ../../_blocks/hero/hero.pug
+        include ../../_blocks/_bootstrap/hero/hero.pug
         -
             var heroContent = [
                 {
-                    container: "container-fluid",
-                    row: "row",
-                    col: "col-xl-12",
                     heroTop: true,
                     title: 'Simple PSD template with cool stuff',
                     textAfter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -37,43 +30,23 @@ block content
         each item in heroContent
             +hero(item)(class="hero--top")
 
-        include ../../_blocks/offers/offers.pug
-        +offers({
-            container: "container",
-            row: "row",
-            col: "col-xl-12",
-            offerCol: "col-xl-3 col-lg-3 col-md-6 col-sm-6"
-        })
+        include ../../_blocks/_bootstrap/offers/offers.pug
+        +offers()
 
-        include ../../_blocks/photo-description/photo-description.pug
-        +photo-description({
-            container: "container-fluid",
-            row: "row photo-description__row",
-            cols: ["col-xl-6 col-lg-6 col-md-6 col-sm-12", "col-xl-6 col-lg-6 col-md-6 col-sm-12"]
-        })
+        //- include ../../_blocks/_bootstrap/photo-description/photo-description.pug
+        //- +photo-description()
 
-        include ../../_blocks/products-preview/products-preview.pug
-        +products-preview({
-            container: "container",
-            row: "row",
-            cols: ["col-xl-5 col-lg-6 col-md-6 col-sm-12", "col-xl-7 col-lg-6 col-md-6 col-sm-12",]
-        })
+        //- include ../../_blocks/_bootstrap/products-preview/products-preview.pug
+        //- +products-preview()
 
-        include ../../_blocks/ceo/ceo.pug
-        +ceo({
-            container: "container",
-            row: "row align-items-center",
-            cols: ["col-xl-6 col-lg-6 col-md-12", "col-xl-6 col-lg-6 col-md-12"]
-        })
+        include ../../_blocks/_bootstrap/ceo/ceo.pug
+        +ceo()
 
     footer(class="footer")
-        include ../../_blocks/hero/hero.pug
+        include ../../_blocks/_bootstrap/hero/hero.pug
         -
             var heroContent = [
                 {
-                    container: "container-fluid",
-                    row: "row",
-                    col: "col-xl-12 col-lg-12 col-md-12 col-sm-12",
                     textBefore: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                     heroBottom: true,
                     title: 'Lorem ipsum dolor sit amet',

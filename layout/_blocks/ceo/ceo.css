@@ -34,7 +34,7 @@
         padding-left: 65px;
 
         @media (--XXL) {
-            padding-top: 103px;
+            padding-top: 97px;
             padding-left: 73px;
         }
 
@@ -44,14 +44,10 @@
             flex-direction: column;
             justify-content: center;
         }
-
-        .block-text__description {
-            padding-left: 4px;
-        }
     }
 
     &__box-text {
-        margin-bottom: 70px;
+        margin-bottom: 69px;
 
         @media (--L) {
             margin-bottom: 20px;

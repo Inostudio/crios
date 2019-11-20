@@ -11,21 +11,14 @@ block content
     include ../../_blocks/follow-page/follow-page.pug
     +follow-page()
     
-    include ../../_blocks/header/header.pug
-    +header({
-        container: "grid-container fluid",
-        row: "grid-x",
-        cols: ["large-3 medium-2 columns", "large-6 medium-8 columns", "large-3 medium-12 columns"]
-    })
+    include ../../_blocks/_foundation/header/header.pug
+    +header()
 
     main(class="main")
-        include ../../_blocks/hero/hero.pug
+        include ../../_blocks/_foundation/hero/hero.pug
         -
             var heroContent = [
                 {
-                    container: "grid-container fluid",
-                    row: "grid-x",
-                    col: "columns small-12",
                     heroTop: true,
                     title: 'Simple PSD template with cool stuff',
                     textAfter: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -37,37 +30,28 @@ block content
         each item in heroContent
             +hero(item)(class="hero--top")
 
-        include ../../_blocks/offers/offers.pug
-        +offers({
-            container: "grid-container fluid",
-            row: "grid-x",
-            col: "cell auto",
-            offerCol: "columns large-3 medium-6 small-12",
-        })
+        include ../../_blocks/_foundation/offers/offers.pug
+        +offers()
 
-        include ../../_blocks/photo-description/photo-description.pug
-        +photo-description({
-            container: "grid-container fluid",
-            row: "grid-x",
-            cols: ["large-6 medium-6 small-12", "large-6 medium-6 small-12"]
-        })
+        //- include ../../_blocks/photo-description/photo-description.pug
+        //- +photo-description({
+        //-     container: "grid-container fluid",
+        //-     row: "grid-x",
+        //-     cols: ["large-6 medium-6 small-12", "large-6 medium-6 small-12"]
+        //- })
 
-        include ../../_blocks/products-preview/products-preview.pug
-        +products-preview({
-            container: "grid-container fluid",
-            row: "grid-x",
-            cols: ["large-5 medium-6 small-12", "large-7 medium-6 small-12"]
-        })
+        //- include ../../_blocks/products-preview/products-preview.pug
+        //- +products-preview({
+        //-     container: "grid-container fluid",
+        //-     row: "grid-x",
+        //-     cols: ["large-5 medium-6 small-12", "large-7 medium-6 small-12"]
+        //- })
 
-        include ../../_blocks/ceo/ceo.pug
-        +ceo({
-            container: "grid-container fluid",
-            row: "grid-x align-middle",
-            cols: ["large-6 medium-6", "large-6 medium-6"]
-        })
+        include ../../_blocks/_foundation/ceo/ceo.pug
+        +ceo()
 
         footer(class="footer")
-            include ../../_blocks/hero/hero.pug
+            include ../../_blocks/_foundation/hero/hero.pug
             -
                 var heroContent = [
                     {

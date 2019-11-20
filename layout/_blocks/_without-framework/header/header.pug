@@ -1,0 +1,17 @@
+mixin header(obj)
+    header(class="header")
+        div(class="box")
+            div(class="header__row")
+                div(class="header__nav")
+                    include ../nav/nav.pug
+                    +nav(["Home", "About"])
+
+                include ../../logo/logo.pug
+                +logo()(class="header__logo")
+
+                div(class="header__search")
+                    include ../../search/search.pug
+                    +search()
+    !="\n"
+
+    // END .header

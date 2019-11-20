@@ -1,3 +1,7 @@
 @import "../../_blocks/foundation/foundation.min.css";
-@import "../../_blocks/common/common.css";
-@import "../../_blocks/grid-container/grid-container.css";
+@import "../../_blocks/page/page.css";
+@import "../../_blocks/follow-page/follow-page.css";
+@import "../../_blocks/_foundation/header/header.css";
+@import "../../_blocks/hero/hero.css";
+@import "../../_blocks/offers/offers.css";
+@import "../../_blocks/ceo/ceo.css";

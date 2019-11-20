@@ -1,7 +1,15 @@
 @import "../_settings/_settings.css";
+@import "../normalize/normalize.css";
+@import "../reset/reset.css";
 @import "../vars-media/vars-media.css";
 @import "../vars-color/vars-color.css";
 @import "../visually-hidden/visually-hidden.css";
+@import "../box/box.css";
+@import "../button/button.css";
+@import "../title/title.css";
+@import "../text/text.css";
+@import "../block-text/block-text.css";
+@import "../image-box/image-box.css";
 
 .page {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -40,6 +48,10 @@
 
     a {
         text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     h1, h2, h3 {

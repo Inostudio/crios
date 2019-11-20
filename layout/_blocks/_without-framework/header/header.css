@@ -1,0 +1,62 @@
+@import "../../nav/nav.css";
+@import "../../menu/menu.css";
+@import "../../logo/logo.css";
+@import "../../search/search.css";
+
+.header {
+    background: var(--white);
+    margin-bottom: 122px;
+
+    @media (--L) {
+        margin-bottom: 110px;
+    }
+
+    @media (--M) {
+        margin-bottom: 80px;
+    }
+    
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    &__nav {
+        width: calc(100% / 4);
+
+        @media (--M) {
+            width: calc(100%*2 / 12);
+        }
+
+        @media (--XS) {
+            width: auto;
+        }
+    }
+
+    &__logo {
+        width: calc(100% / 2);
+
+        @media (--M) {
+            width: calc(100%*8 / 12);
+        }
+
+        @media (--S) {
+            width: calc(100%*10 / 12);
+        }
+    }
+
+    &__search {
+        padding-top: 57px;
+        width: calc(100% / 4);
+
+        @media (--M) {
+            padding-top: 35px;
+            width: calc(100%*2 / 12);
+        }
+
+        @media (--S) {
+            padding-top: 9px;
+            width: 100%;
+        }
+    }
+}

@@ -26,6 +26,10 @@
         box-sizing: border-box;
         transition: color .2s linear;
 
+        &:hover {
+            color: #0056b3;
+        }
+
         @media (--L) {
             width: 380px;
             height: 380px;

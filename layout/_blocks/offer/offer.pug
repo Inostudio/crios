@@ -1,5 +1,5 @@
 mixin offer(item)
-    div(class="offer " + item.col)
+    div(class="offer")&attributes(attributes)
         div(class="offer__icon-block")
             !="\n"
             img(class="offer__icon" src="images/offers/" + item.img + ".jpg" alt="Offer")

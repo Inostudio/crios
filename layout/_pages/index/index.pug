@@ -10,11 +10,11 @@ block content
     include ../../_blocks/follow-page/follow-page.pug
     +follow-page()
 
-    include ../../_blocks/w-header/w-header.pug
-    +w-header()
+    include ../../_blocks/_without-framework/header/header.pug
+    +header()
 
     main(class="main")
-        include ../../_blocks/w-hero/w-hero.pug
+        include ../../_blocks/_without-framework/hero/hero.pug
         -
             var heroContent = [
                 {
@@ -27,22 +27,22 @@ block content
             ]
 
         each item in heroContent
-            +w-hero(item)(class="hero--top")
+            +hero(item)(class="hero--top")
 
-        include ../../_blocks/w-offers/w-offers.pug
-        +w-offers()
+        include ../../_blocks/_without-framework/offers/offers.pug
+        +offers()
 
-        include ../../_blocks/w-photo-description/w-photo-description.pug
-        +w-photo-description()
+        //- include ../../_blocks/w-photo-description/w-photo-description.pug
+        //- +w-photo-description()
 
-        include ../../_blocks/w-products-preview/w-products-preview.pug
-        +w-products-preview()
+        //- include ../../_blocks/w-products-preview/w-products-preview.pug
+        //- +w-products-preview()
 
-        include ../../_blocks/w-ceo/w-ceo.pug
-        +w-ceo()(class="ceo")
+        include ../../_blocks/_without-framework/ceo/ceo.pug
+        +ceo()
 
     footer(class="footer")
-        include ../../_blocks/w-hero/w-hero.pug
+        include ../../_blocks/_without-framework/hero/hero.pug
         -
             var heroContent = [
                 {
@@ -55,4 +55,4 @@ block content
             ]
 
         each item in heroContent
-            +w-hero(item)(class="hero hero--bottom")
+            +hero(item)(class="hero hero--bottom")

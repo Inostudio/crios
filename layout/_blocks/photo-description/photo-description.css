@@ -2,39 +2,17 @@
 
 .photo-description {
     background-color: var(--grey);
+    overflow-x: hidden;
 
-    .photo-description__row {
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-
-        &.fluid {
-            padding: 0;
-        }
+    &__row {
+        margin-left: -250px;
+        margin-right: -250px;
     }
 
-    &__row--reverse {
-        .photo-description__block-text {
-            @media (--XXL) {
-                padding: 0;
-                justify-content: center;
-            }
-        }
-
-        .photo-description__block-img {
-            background: url("../../images/product/photo-2.jpg") center no-repeat;
-            background-size: cover;
-
-            @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
-                background: url("../../images/product/photo-2@2x.jpg") center no-repeat;
-                background-size: cover;
-            }
-        }
-    }
-
-    &__block-img {
-        padding: 0;
+    &__image-box {
         min-height: 500px;
+        background: url("../../images/product/photo-1.jpg") center no-repeat;
+        background-size: cover;
         background: url("../../images/product/photo-1.jpg") center no-repeat;
         background-size: cover;
 
@@ -61,10 +39,10 @@
         }
     }
 
-    &__block-text {
+    &__text-box {
         display: flex;
         align-items: center;
-        padding: 0 111px;
+        padding: 0 250px 0 111px;
         background-color: var(--grey);
 
         @media (--L) {
@@ -84,18 +62,22 @@
         }
     }
 
-    & .block-text__description {
-
-        @media (--S) {
-            line-height: 1.8;
+    &__row--reverse {
+        .photo-description__text-box {
+            @media (--XXL) {
+                padding: 0;
+                justify-content: center;
+            }
         }
-    }
 
-    & .block-text__title {
+        .photo-description__image-box {
+            background: url("../../images/product/photo-2.jpg") center no-repeat;
+            background-size: cover;
 
-        @media (--S) {
-            font-size: 26px;
-            margin-bottom: 12px;
+            @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+                background: url("../../images/product/photo-2@2x.jpg") center no-repeat;
+                background-size: cover;
+            }
         }
     }
 }

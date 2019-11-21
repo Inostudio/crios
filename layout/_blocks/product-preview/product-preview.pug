@@ -1,0 +1,21 @@
+mixin product-preview(obj)
+    div(class="product-preview")&attributes(attributes)
+        div(class="product-preview__image-box image-box " + obj.cols[0])
+            !="\n"
+            img(class="image-box__image",
+                src="images/product/" + obj.img + obj.format,
+                srcset="images/product/" + obj.img + "@2x" + "." + obj.format,
+                alt=obj.img)
+            !="\n"
+
+        div(class="product-preview__text-box " + obj.cols[1])
+            include ../../_blocks/block-text/block-text.pug
+            +block-text({
+                titleColor: obj.color,
+                title: "Lorem ipsum dolor",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+            })
+    
+    !="\n"
+
+    // END .product-preview

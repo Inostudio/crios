@@ -1,0 +1,93 @@
+@import "../../block-text/block-text.css";
+
+.photo-description-item {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__image-box {
+        width: calc(100% / 2);
+        min-height: 500px;
+        background: url("../../images/product/photo-1.jpg") center no-repeat;
+        background-size: cover;
+
+        @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+            background: url("../../images/product/photo-1@2x.jpg") center no-repeat;
+            background-size: cover;
+        }
+
+        @media (--XXL) {
+            min-height: 563px;
+        }
+
+        @media (--XL) {
+            min-height: 440px;
+        }
+
+        @media (--M) {
+            min-height: 400px;
+        }
+
+        @media (--S) {
+            width: 100%;
+            min-height: 280px;
+            height: 280px;
+        }
+    }
+
+    &__text-box {
+        display: flex;
+        align-items: center;
+        width: calc(100% / 2);
+        padding: 20px 111px;
+        box-sizing: border-box;
+        background-color: var(--grey);
+
+        @media (--L) {
+            padding: 20px 80px;
+        }
+
+        @media (--M) {
+            padding: 20px 60px;
+        }
+
+        @media (--S) {
+            width: 100%;
+            padding: 15px 0;
+        }
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+
+        .photo-description-item__text-box {
+            @media (--XXL) {
+                padding: 0 16px 0 0;
+                justify-content: center;
+            }
+        }
+
+        .photo-description-item__image-box {
+            background: url("../../images/product/photo-2.jpg") center no-repeat;
+            background-size: cover;
+
+            @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+                background: url("../../images/product/photo-2@2x.jpg") center no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &__block-text {
+        @media (--S) {
+            max-width: 540px;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        @media (--XS) {
+            max-width: 480px;
+        }
+    }
+}

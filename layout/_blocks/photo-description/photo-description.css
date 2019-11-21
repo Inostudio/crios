@@ -1,83 +1,17 @@
-@import "../block-text/block-text.css";
+@import "../photo-description-item/photo-description-item.css";
 
 .photo-description {
     background-color: var(--grey);
-    overflow-x: hidden;
 
-    &__row {
-        margin-left: -250px;
-        margin-right: -250px;
-    }
-
-    &__image-box {
-        min-height: 500px;
-        background: url("../../images/product/photo-1.jpg") center no-repeat;
-        background-size: cover;
-        background: url("../../images/product/photo-1.jpg") center no-repeat;
-        background-size: cover;
-
-        @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
-            background: url("../../images/product/photo-1@2x.jpg") center no-repeat;
-            background-size: cover;
-        }
-
+    & .photo-description__container {
         @media (--XXL) {
-            min-height: 563px;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         @media (--XL) {
-            min-height: 440px;
-        }
-
-        @media (--M) {
-            min-height: 400px;
-        }
-
-        @media (--S) {
-            min-height: 280px;
-            height: 280px;
-        }
-    }
-
-    &__text-box {
-        display: flex;
-        align-items: center;
-        padding: 0 250px 0 111px;
-        background-color: var(--grey);
-
-        @media (--L) {
-            padding: 0 80px;
-        }
-
-        @media (--M) {
-            padding: 0 60px;
-        }
-
-        @media (--S) {
-            padding: 30px;
-        }
-
-        @media (--XS) {
-            padding: 15px;
-        }
-    }
-
-    &__row--reverse {
-        .photo-description__text-box {
-            @media (--XXL) {
-                padding: 0;
-                justify-content: center;
-            }
-        }
-
-        .photo-description__image-box {
-            background: url("../../images/product/photo-2.jpg") center no-repeat;
-            background-size: cover;
-
-            @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
-                background: url("../../images/product/photo-2@2x.jpg") center no-repeat;
-                background-size: cover;
-            }
-        }
+            padding-left: 0;
+            padding-right: 0;
+        } 
     }
 }

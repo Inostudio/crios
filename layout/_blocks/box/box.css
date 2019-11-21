@@ -43,7 +43,7 @@
 
         @media (--XXL) {
             width: auto;
-            max-width: 1530px;
+            max-width: 1500px;
         }
 
         @media (--L) {

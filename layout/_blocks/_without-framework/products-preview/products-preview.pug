@@ -1,20 +1,19 @@
 mixin products-preview(obj)
     section(class="products-preview")
         div(class="box")
-            div(class="container")
                 include ../../product-preview/product-preview.pug
                 +product-preview({
-                    cols: ["col-xl-5 col-lg-6 col-md-6 col-sm-12", "col-xl-7 col-lg-6 col-md-6 col-sm-12"],
+                    cols: ["", ""],
                     img: "product-1",
                     format: "png",
                     color: "blue"
-                })(class="row products-preview__item")
+                })(class="products-preview__item")
                 +product-preview({
-                    cols: ["col-xl-5 col-lg-6 col-md-6 col-sm-12", "col-xl-7 col-lg-6 col-md-6 col-sm-12"],
+                    cols: ["", ""],
                     img: "product-2",
                     format: "png",
                     color: "blue"
-                })(class="row products-preview__item product-preview--reverse")
+                })(class="products-preview__item product-preview--reverse")
     !="\n"
 
     // END .products-preview

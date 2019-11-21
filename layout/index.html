@@ -19,29 +19,27 @@
     <header class="header">
         <div class="box">
             <div class="header__row">
-                <div class="header__nav">
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <button class="button button-menu button--circle button-menu--opened">
-                                    <span class="button-menu__line"></span>
-                                </button></li>
-                            <li class="nav__item">
-                                <div class="menu">
-                                    <ul class="menu__list">
-                                        <li>
-                                            <a class="menu__link nav__link" href="#">Home</a>
-                                        </li>
-                                        <li>
-                                            <a class="menu__link nav__link" href="#">About</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- END .nav-->
-                </div>
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <button class="button button-menu button--circle button-menu--opened">
+                                <span class="button-menu__line"></span>
+                            </button></li>
+                        <li class="nav__item">
+                            <div class="menu">
+                                <ul class="menu__list">
+                                    <li>
+                                        <a class="menu__link nav__link" href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="menu__link nav__link" href="#">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- END .nav-->
                 <div class="logo header__logo">
                     <a class="logo__link" href="#3">CRIOS
                         <span class="logo__text">FREE PSD TEMPLATE</span>
@@ -51,7 +49,7 @@
                 <div class="header__search">
                     <div class="search">
                         <form class="form search__form">
-                            <input class="form__controll" type="text" placeholder="Search...">
+                            <input class="form__control" type="text" placeholder="Search...">
                         </form>
                         <div class="search__button-block">
                             <button class="button button--circle search__button">
@@ -87,28 +85,36 @@
                 <div class="offers__list">
                     <div class="offer offers__item">
                         <div class="offer__icon-block">
-                            <img class="offer__icon" src="images/offers/offer-1.jpg" alt="Offer"></div>
+                            <img class="offer__icon" src="images/offers/offer-1.jpg" alt="Offer">
+                        </div>
                         <p class="offer__title">Lorem ipsum dolor sit amet</p>
                         <p class="text text--size-s text--darker offer__text">Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.</p>
-                    </div><!-- END .offer-->
+                    </div>
+                    <!-- END .offer-->
                     <div class="offer offers__item">
                         <div class="offer__icon-block">
-                            <img class="offer__icon" src="images/offers/offer-2.jpg" alt="Offer"></div>
+                            <img class="offer__icon" src="images/offers/offer-2.jpg" alt="Offer">
+                        </div>
                         <p class="offer__title">Lorem ipsum dolor sit amet</p>
                         <p class="text text--size-s text--darker offer__text">Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.</p>
-                    </div><!-- END .offer-->
+                    </div>
+                    <!-- END .offer-->
                     <div class="offer offers__item">
                         <div class="offer__icon-block">
-                            <img class="offer__icon" src="images/offers/offer-3.jpg" alt="Offer"></div>
+                            <img class="offer__icon" src="images/offers/offer-3.jpg" alt="Offer">
+                        </div>
                         <p class="offer__title">Lorem ipsum dolor sit amet</p>
                         <p class="text text--size-s text--darker offer__text">Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.</p>
-                    </div><!-- END .offer-->
+                    </div>
+                    <!-- END .offer-->
                     <div class="offer offers__item">
                         <div class="offer__icon-block">
-                            <img class="offer__icon" src="images/offers/offer-4.jpg" alt="Offer"></div>
+                            <img class="offer__icon" src="images/offers/offer-4.jpg" alt="Offer">
+                        </div>
                         <p class="offer__title">Lorem ipsum dolor sit amet</p>
                         <p class="text text--size-s text--darker offer__text">Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.</p>
-                    </div><!-- END .offer-->
+                    </div>
+                    <!-- END .offer-->
                 </div>
                 <div class="offers__block-button">
                     <a class="button button--square button--square-middle button--square offers__link" href="#5">
@@ -118,7 +124,63 @@
                 </div>
             </div>
         </section>
-        <!-- END .w-offers-->
+        <!-- END .offers-->
+        <section class="photo-description">
+            <div class="photo-description-item">
+                <div class="photo-description-item__image-box "></div>
+                <div class="photo-description-item__text-box ">
+                    <div class="block-text photo-description-item__block-text">
+                        <h3 class="title block-text__title">Lorem ipsum dolor</h3>
+                        <p class="text text--darker block-text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
+                    </div>
+                    <!-- END .block-text-->
+                </div>
+            </div>
+            <!-- END .photo-description-item-->
+            <div class="photo-description-item photo-description-item--reverse">
+                <div class="photo-description-item__image-box "></div>
+                <div class="photo-description-item__text-box ">
+                    <div class="block-text photo-description-item__block-text">
+                        <h3 class="title block-text__title">Lorem ipsum dolor</h3>
+                        <p class="text text--darker block-text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
+                    </div>
+                    <!-- END .block-text-->
+                </div>
+            </div>
+            <!-- END .photo-description-item-->
+        </section>
+        <!-- END .photo-description-->
+        <section class="products-preview">
+            <div class="box">
+                <div class="product-preview products-preview__item">
+                    <div class="product-preview__image-box image-box ">
+                        <img class="image-box__image" src="images/product/product-1png" srcset="images/product/product-1@2x.png" alt="product-1">
+                    </div>
+                    <div class="product-preview__text-box ">
+                        <div class="block-text">
+                            <h3 class="title block-text__title title--blue">Lorem ipsum dolor</h3>
+                            <p class="text text--darker block-text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
+                        </div>
+                        <!-- END .block-text-->
+                    </div>
+                </div>
+                <!-- END .product-preview-->
+                <div class="product-preview products-preview__item product-preview--reverse">
+                    <div class="product-preview__image-box image-box ">
+                        <img class="image-box__image" src="images/product/product-2png" srcset="images/product/product-2@2x.png" alt="product-2">
+                    </div>
+                    <div class="product-preview__text-box ">
+                        <div class="block-text">
+                            <h3 class="title block-text__title title--blue">Lorem ipsum dolor</h3>
+                            <p class="text text--darker block-text__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
+                        </div>
+                        <!-- END .block-text-->
+                    </div>
+                </div>
+                <!-- END .product-preview-->
+            </div>
+        </section>
+        <!-- END .products-preview-->
         <section class="ceo">
             <div class="box ceo__row">
                 <div class="image-box ceo__photo-block">
@@ -137,7 +199,7 @@
                 </div>
             </div>
         </section>
-        <!-- END .w-ceo-->
+        <!-- END .ceo-->
     </main>
     <footer class="footer">
         <section class="hero hero hero--bottom">

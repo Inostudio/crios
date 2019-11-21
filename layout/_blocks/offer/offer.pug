@@ -3,7 +3,10 @@ mixin offer(item)
         div(class="offer__icon-block")
             !="\n"
             img(class="offer__icon" src="images/offers/" + item.img + ".jpg" alt="Offer")
+            !="\n"
         p(class="offer__title") !{item.title}
         p(class="text text--size-s text--darker offer__text") !{item.text}
+
+    !="\n"
 
     // END .offer

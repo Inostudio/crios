@@ -1,0 +1,14 @@
+mixin photo-description-item(obj)
+    div(class="photo-description-item")&attributes(attributes)
+        div(class="photo-description-item__image-box " + obj.cols[0])
+        div(class="photo-description-item__text-box " + obj.cols[1])
+            include ../../_blocks/block-text/block-text.pug
+            +block-text({
+                titleColor: "",
+                title: "Lorem ipsum dolor",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+            })(class="photo-description-item__block-text")
+
+    !="\n"
+
+    // END .photo-description-item

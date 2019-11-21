@@ -3,13 +3,11 @@ mixin header(obj)
         div(class="box")
             div(class="grid-container fluid")
                 div(class="grid-x")
-                    div(class="large-3 medium-2 columns")
-                        include ../nav/nav.pug
-                        +nav(["Home", "About"])
+                    include ../nav/nav.pug
+                    +nav(["Home", "About"])(class="large-3 medium-2 columns")
 
-                    div(class="large-6 medium-8 columns")
-                        include ../../logo/logo.pug
-                        +logo()
+                    include ../../logo/logo.pug
+                    +logo()(class="large-6 medium-8 columns")
 
                     div(class="large-3 medium-12 columns header__search")
                         include ../search/search.pug

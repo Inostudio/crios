@@ -33,19 +33,11 @@ block content
         include ../../_blocks/_foundation/offers/offers.pug
         +offers()
 
-        //- include ../../_blocks/photo-description/photo-description.pug
-        //- +photo-description({
-        //-     container: "grid-container fluid",
-        //-     row: "grid-x",
-        //-     cols: ["large-6 medium-6 small-12", "large-6 medium-6 small-12"]
-        //- })
+        include ../../_blocks/_foundation/photo-description/photo-description.pug
+        +photo-description()
 
-        //- include ../../_blocks/products-preview/products-preview.pug
-        //- +products-preview({
-        //-     container: "grid-container fluid",
-        //-     row: "grid-x",
-        //-     cols: ["large-5 medium-6 small-12", "large-7 medium-6 small-12"]
-        //- })
+        include ../../_blocks/_foundation/products-preview/products-preview.pug
+        +products-preview()
 
         include ../../_blocks/_foundation/ceo/ceo.pug
         +ceo()

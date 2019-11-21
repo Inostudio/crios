@@ -3,4 +3,6 @@
 @import "../../_blocks/_without-framework/header/header.css";
 @import "../../_blocks/hero/hero.css";
 @import "../../_blocks/_without-framework/offers/offers.css";
+@import "../../_blocks/_without-framework/products-preview/products-preview.css";
+@import "../../_blocks/_without-framework/photo-description/photo-descirption.css";
 @import "../../_blocks/_without-framework/ceo/ceo.css";

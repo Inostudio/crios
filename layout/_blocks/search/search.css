@@ -27,7 +27,7 @@
         flex-grow: 1;
     }
 
-    .form__controll {
+    .form__control {
         width: 0;
         height: 100%;
         padding: 0;
@@ -62,7 +62,7 @@
             width: 100%;
         }
 
-        & .form__controll {
+        & .form__control {
             width: 100%;
             padding: 8px 20px;
             margin: 0;

@@ -5,4 +5,6 @@
 @import "../../_blocks/_bootstrap/header/header.css";
 @import "../../_blocks/hero/hero.css";
 @import "../../_blocks/offers/offers.css";
+@import "../../_blocks/photo-description/photo-description.css";
+@import "../../_blocks/products-preview/products-preview.css";
 @import "../../_blocks/ceo/ceo.css";

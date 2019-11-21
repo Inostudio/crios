@@ -1,0 +1,12 @@
+mixin photo-description(obj)
+    section(class="photo-description")
+        include ../../photo-description-item/photo-description-item.pug
+        +photo-description-item({
+            cols: ["", ""]
+        })
+        +photo-description-item({
+            cols: ["", ""]
+        })(class="photo-description-item--reverse")
+    !="\n"
+
+    // END .photo-description

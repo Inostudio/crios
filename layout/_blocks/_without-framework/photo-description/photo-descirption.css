@@ -1,0 +1,5 @@
+@import "../photo-description-item/photo-description-item.css";
+
+.photo-description {
+    background-color: var(--grey);
+}

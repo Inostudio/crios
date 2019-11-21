@@ -2,9 +2,8 @@ mixin header(obj)
     header(class="header")
         div(class="box")
             div(class="header__row")
-                div(class="header__nav")
-                    include ../nav/nav.pug
-                    +nav(["Home", "About"])
+                include ../nav/nav.pug
+                +nav(["Home", "About"])(class="header__nav")
 
                 include ../../logo/logo.pug
                 +logo()(class="header__logo")

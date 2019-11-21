@@ -11,7 +11,8 @@
     &__photo-block {
         width: calc(100% / 2);
         padding-top: 2px;
-        padding-left: 20px;
+        padding-left: 28px;
+        padding-right: 28px;
         box-sizing: border-box;
 
         @media (--L) {
@@ -38,7 +39,7 @@
         box-sizing: border-box;
 
         @media (--XXL) {
-            padding-top: 103px;
+            padding-top: 87px;
             padding-left: 73px;
         }
 
@@ -51,10 +52,6 @@
 
         @media (--M) {
             width: 100%;
-        }
-
-        .block-text__description {
-            padding-left: 4px;
         }
     }
 

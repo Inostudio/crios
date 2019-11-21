@@ -10,7 +10,7 @@
         margin-bottom: 0;
     }
 
-    &__block-text {
+    &__text-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,7 +22,7 @@
         }
     }
 
-    &__block-img {
+    &__image-box {
         padding-right: 111px;
         padding-left: 12px;
 
@@ -40,7 +40,9 @@
     }
 
     &--reverse {
-        .product-preview__block-text {
+        flex-direction: row-reverse;
+        
+        .product-preview__text-box {
             padding-bottom: 11px;
             padding-left: 65px;
 

@@ -15,7 +15,7 @@
     }
 
     &__title {
-        margin-bottom: 98px;
+        margin-bottom: 96px;
 
         @media (--M) {
             margin-bottom: 50px;
@@ -45,7 +45,7 @@
     }
 
     &__block-button {
-        margin-bottom: 126px;
+        margin-bottom: 127px;
 
         @media (--M) {
             margin-bottom: 70px;

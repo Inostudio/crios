@@ -1,25 +1,13 @@
 mixin photo-description(obj)
     section(class="photo-description")
         div(class="container-fluid")
-            div(class="box")
-                div(class="row photo-description__row")
-                    div(class="col-xl-6 col-sm-12 photo-description__image-box")
-                    div(class="col-xl-6 col-sm-12 photo-description__text-box")
-                        include ../../block-text/block-text.pug
-                        +block-text({
-                            titleColor: "black",
-                            title: "Lorem ipsum dolor",
-                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
-                        })
-                div(class="row photo-description__row photo-description__row--reverse")
-                    div(class="col-xl-6 photo-description__text-box")
-                        include ../../block-text/block-text.pug
-                        +block-text({
-                            titleColor: "black",
-                            title: "Lorem ipsum dolor",
-                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
-                        })
-                    div(class="col-xl-6 photo-description__image-box")
+            include ../../photo-description-item/photo-description-item.pug
+            +photo-description-item({
+                cols: ["col-xl-6 col-lg-6 col-md-6 col-sm-12", "col-xl-6 col-lg-6 col-md-6 col-sm-12"]
+            })(class="row")
+            +photo-description-item({
+                cols: ["col-xl-6 col-lg-6 col-md-6 col-sm-12", "col-xl-6 col-lg-6 col-md-6 col-sm-12"]
+            })(class="photo-description-item--reverse row")
     !="\n"
 
     // END .photo-description

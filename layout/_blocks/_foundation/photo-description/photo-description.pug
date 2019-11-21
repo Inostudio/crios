@@ -1,0 +1,13 @@
+mixin photo-description(obj)
+    section(class="photo-description")
+        div(class="grid-container fluid photo-description__container")
+            include ../../photo-description-item/photo-description-item.pug
+            +photo-description-item({
+                cols: ["large-6 medium-6 small-12", "large-6 medium-6 small-12"]
+            })(class="grid-x")
+            +photo-description-item({
+                cols: ["large-6 medium-6 small-12", "large-6 medium-6 small-12"]
+            })(class="photo-description-item--reverse grid-x")
+    !="\n"
+
+    // END .photo-description
